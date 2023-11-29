@@ -1,0 +1,449 @@
+.body {
+  font-family: Roboto, sans-serif;
+}
+
+@keyframes move {
+  0% {
+    transform: rotate(90deg) translate(4px, 0px);
+  }
+  50% {
+    transform: rotate(90deg) translate(-4px, 0px);
+  }
+  100% {
+    transform: rotate(90deg) translate(4px, 0px);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.primaryButton {
+  color: black;
+  background-color: #bfef2d;
+  padding: 12px 30px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 20px;
+}
+
+.section1 {
+  background-color: #00071a;
+  background-image: url(../images/slider_line_shape.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0% 27%;
+}
+.section1 .section1Cont {
+  display: flex;
+  background: url(../images/slider_shape_33.png);
+  background-position: 100px 0px;
+  background-repeat: no-repeat;
+  padding: 40px 0px;
+}
+.section1 .section1Cont .section1L {
+  width: 5%;
+}
+.section1 .section1Cont .section1L .section1Bullet .Bullets {
+  height: 25px;
+  width: 25px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.section1 .section1Cont .section1M {
+  width: 40%;
+  border-left: solid #4d4747 1px;
+  padding-left: 15px;
+}
+.section1 .section1Cont .section1M .section1Head {
+  color: white;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 88px;
+}
+.section1 .section1Cont .section1M .section1Para {
+  width: 25rem;
+  color: white;
+  font-size: 19px;
+  padding: 18px 0px;
+}
+.section1 .section1Cont .section1M .primaryButton .upArrow {
+  padding: 0px 5px;
+  margin: 51px 0px;
+}
+.section1 .section1Cont .section1M .primaryButton:hover .upArrow i {
+  transition: 100ms;
+  transform: rotate(30deg);
+}
+.section1 .section1Cont .section1M .section1Card {
+  display: flex;
+  background-color: #212738;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0px 20px 0px 0px;
+  margin: 60px 0px;
+}
+.section1 .section1Cont .section1M .section1Card i {
+  color: white;
+  margin: auto;
+  position: relative;
+  right: 5px;
+  font-size: 30px;
+}
+.section1 .section1Cont .section1M .section1Card .section1CR {
+  padding: 0px 4px;
+}
+.section1 .section1Cont .section1M .section1Card .section1CR .section1CHead {
+  color: white;
+  font-size: 23px;
+  padding: 22px 0px 3px;
+  font-weight: 700;
+}
+.section1 .section1Cont .section1M .section1Card .section1CR .section1CPara {
+  color: rgb(231, 229, 229);
+}
+.section1 .section1Cont .section1M .subButton {
+  color: white;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  padding: 10px;
+  border: #bfef2d solid;
+  border-radius: 25px;
+  padding: 20px 10px;
+}
+.section1 .section1Cont .section1M .subButton i {
+  transform: rotate(90deg);
+  padding: 5px;
+  animation: move 2s linear infinite;
+}
+.section1 .section1Cont .section1R img {
+  width: 95%;
+}
+.section1 .section1Cont .socials {
+  color: white;
+  margin: 169px 0px;
+}
+.section1 .section1Cont .socials .social {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  padding: 20px;
+}
+
+.section2 {
+  background-color: #00071a;
+  overflow: clip;
+  background-image: url(../images/a_shape3.png);
+  background-repeat: no-repeat;
+  background-position: 0% 106%;
+}
+.section2 .section2Top img {
+  position: relative;
+  left: 27rem;
+}
+.section2 .section2Cont {
+  margin: 0px 0px 0px 7%;
+  display: flex;
+  color: white;
+  background: url(../images/a_shape3.png), #0a183f;
+  background-position: 0% 131%;
+  background-repeat: no-repeat;
+}
+.section2 .section2Cont .section2L {
+  margin: 66px 72px;
+}
+.section2 .section2Cont .section2M {
+  width: 30%;
+  margin: 66px 50px 0px 0px;
+}
+.section2 .section2Cont .section2M .section2topHead {
+  font-size: 20px;
+  color: #bababa;
+  font-weight: 500;
+}
+.section2 .section2Cont .section2M .section2topHead img {
+  padding: 5px;
+}
+.section2 .section2Cont .section2M .section2Head {
+  width: 55%;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 68px;
+}
+.section2 .section2Cont .section2M .section2Head span {
+  color: #bfef2d;
+}
+.section2 .section2Cont .section2M .section2Para {
+  color: gainsboro;
+  text-align: justify;
+  font-size: 19px;
+}
+.section2 .section2Cont .section2M .primaryButton {
+  margin: 32px 0px;
+}
+.section2 .section2Cont .section2R {
+  width: 20%;
+  position: relative;
+}
+.section2 .section2Cont .section2R .section2RCard {
+  background-color: #00071a;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 100px;
+  position: relative;
+  right: 116px;
+  bottom: 60px;
+}
+.section2 .section2Cont .section2R .section2RCard .section2CardCont {
+  max-width: 250px;
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(-76deg, #3b7bf7 1%, #47ff00 36%, #ffde00 71%, #eb0ef7 100%);
+  padding: 3px;
+  border-radius: 100px;
+}
+.section2 .section2Cont .section2R .section2RCard .section2CardCont .cardInterior {
+  background-color: black;
+  border-radius: 100px;
+  padding: 49px 0px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.section2 .section2Cont .section2R .section2RCard .section2CardCont .cardInterior .crystalImg img {
+  position: absolute;
+  top: -113px;
+  animation: rotate 14s 2s linear infinite;
+}
+.section2 .section2Cont .section2R .section2RCard .section2CardCont .cardInterior .section2CardHead {
+  font-size: 55px;
+  font-weight: 700;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.section2 .section2Cont .section2R .section2RCard .section2CardCont .cardInterior .section2CardPara {
+  text-align: center;
+  margin: auto;
+  width: 55%;
+}
+.section2 .section2Cont .section2R .section2RCard .section2CardCont .cardInterior .section2CardPointer {
+  position: relative;
+  font-size: 17px;
+  top: -165px;
+  left: 159px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+  padding: 20px 26px;
+  background-color: #bfef2d;
+  transform: rotate(-40deg);
+  color: black;
+}
+.section2 .section2Cont .section2R .sect2bgImg {
+  top: 0;
+  left: -67px;
+  position: absolute;
+}
+
+.section4 {
+  background-color: #00071a;
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+}
+.section4 .section4Cont {
+  padding-top: 10%;
+  padding-bottom: 7%;
+}
+.section4 .section4Cont .section4TopHead {
+  margin-left: 5%;
+  color: white;
+  padding: 7px;
+  font-size: 20px;
+}
+.section4 .section4Cont .section4TopHead img {
+  padding: 5px 10px;
+}
+.section4 .section4Cont .section4Head {
+  color: white;
+  width: 55%;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 68px;
+  margin: 21px 0px;
+  margin-left: 5%;
+}
+.section4 .section4Cont .section4Head span {
+  color: #bfef2d;
+}
+.section4 .section4Cont .section4CardCont {
+  display: flex;
+}
+.section4 .section4Cont .section4CardCont .section4CardLeft {
+  width: 17%;
+  margin-right: 5px;
+}
+.section4 .section4Cont .section4CardCont .section4CardLeft img {
+  width: 100%;
+}
+.section4 .section4Cont .section4CardCont .section4CardM {
+  width: 30%;
+}
+.section4 .section4Cont .section4CardCont .section4CardM img {
+  width: 100%;
+}
+.section4 .section4Cont .section4CardCont .section4CardRight {
+  width: 40%;
+  position: relative;
+}
+.section4 .section4Cont .section4CardCont .section4CardRight .section4CardRightInt {
+  height: 78%;
+  margin: 12% 0 0 0;
+  padding: 4%;
+  background-color: #0a183f;
+}
+.section4 .section4Cont .section4CardCont .section4CardRight .section4CardRightInt .section4CardRightHead {
+  font-weight: 600;
+  color: white;
+  font-size: 25px;
+}
+.section4 .section4Cont .section4CardCont .section4CardRight .section4CardRightInt .section4CardRightPara {
+  color: #9b9b9b;
+}
+.section4 .section4Cont .section4CardCont .section4CardRight .section4CardRightInt .section4CardBottom {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.section4 .section4Cont .section4CardCont .section4CardRight .section4CardRightInt .section4CardNo {
+  padding: 0px 10px;
+  font-size: 50px;
+}
+.section4 .section4Cont .section4CardCont .section4CardRight .section4CardRightInt .section4CardNo span {
+  font-size: 24px;
+}
+.section4 .section4Cont .section4CardCont .section4CardRight .section4CardRightInt .section4CardArrow {
+  padding: 0px 10px;
+  margin: auto 0px;
+}
+.section4 .section4Cont .section4CardCont .section4CardRight .section4CardRightInt .section4CardArrow i {
+  padding: 5px;
+}
+.section4 .section4Cont .section4CardCont .section4CardRight::before {
+  content: " ";
+  padding: 1px;
+  top: 118px;
+  height: 161px;
+  position: absolute;
+  width: 6px;
+  background-image: linear-gradient(-9deg, #f90058 0%, #3e1cf3 100%);
+}
+.section4 .section4Cont .section4aboutCont {
+  background-color: #00000a;
+  display: flex;
+  margin: 49px 0px 0px 135px;
+  padding-left: 40px;
+}
+.section4 .section4Cont .section4aboutCont .sec4Card {
+  color: white;
+  width: 27%;
+  margin: 21px 2px;
+}
+.section4 .section4Cont .section4aboutCont .sec4Card .sec4CardHead {
+  font-weight: 600;
+  font-size: 25px;
+  margin: 11px 0px;
+  border-bottom: solid 1px rgba(113, 113, 113, 0.3803921569);
+  padding-bottom: 17px;
+}
+.section4 .section4Cont .section4aboutCont .sec4Card .sec4CardPara {
+  color: #6c6c6c;
+  width: 82%;
+  padding-bottom: 60px;
+}
+.section4 .section4Cont .section4aboutCont:before {
+  position: absolute;
+  top: -296px;
+  right: -135px;
+  width: 100%;
+  height: 100%;
+  background-color: #00000a;
+  content: "";
+  z-index: -1;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 94%, 53.33% -1px);
+          clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 94%, 53.33% -1px);
+}
+
+.section5 {
+  background-color: #00071a;
+  color: white;
+}
+.section5 .section5Cont {
+  display: flex;
+  margin: 0px 10%;
+}
+.section5 .section5Cont .section5L {
+  width: 45%;
+}
+.section5 .section5Cont .section5L .section5TopHead {
+  padding: 7px;
+  font-size: 20px;
+}
+.section5 .section5Cont .section5L .section5TopHead img {
+  padding: 5px 10px;
+}
+.section5 .section5Cont .section5L .section5Head {
+  width: 97%;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 68px;
+}
+.section5 .section5Cont .section5L .section5Head span {
+  color: #bfef2d;
+}
+.section5 .section5Cont .section5L .section5Para {
+  width: 93%;
+  font-size: 18px;
+  padding: 18px 0px;
+}
+.section5 .section5Cont .section5L .section5LBottom {
+  display: flex;
+  gap: 10px;
+}
+.section5 .section5Cont .section5L .section5LBottom .section5LText {
+  display: flex;
+}
+.section5 .section5Cont .section5L .section5LBottom .section5LText p {
+  font-weight: 600;
+  margin-bottom: 0rem;
+  font-size: 35px;
+}
+.section5 .section5Cont .section5L .section5LBottom .section5LText img {
+  height: 36px;
+  margin: auto;
+  padding: 0px 10px;
+}
+.section5 .section5Cont .section5L .section5LBottom .section5LButton span {
+  rotate: -45deg;
+  padding: 5px;
+}
+.section5 .section5Cont .section5R {
+  display: flex;
+}
+.section5 .section5Cont .section5R .sectionRCardCont {
+  width: 80%;
+}/*# sourceMappingURL=skeleton.css.map */
