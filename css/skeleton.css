@@ -2,6 +2,10 @@
   font-family: Roboto, sans-serif;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 @keyframes move {
   0% {
     transform: rotate(90deg) translate(4px, 0px);
@@ -30,6 +34,15 @@
     transform: rotate(360deg);
   }
 }
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  padding: 7px;
+}
+
 .primaryButton {
   color: black;
   background-color: #bfef2d;
@@ -37,6 +50,8 @@
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 20px;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .section1 {
@@ -389,12 +404,13 @@
 }
 
 .section5 {
-  background-color: #00071a;
   color: white;
+  position: relative;
 }
 .section5 .section5Cont {
   display: flex;
   margin: 0px 10%;
+  padding: 5% 0%;
 }
 .section5 .section5Cont .section5L {
   width: 45%;
@@ -437,13 +453,223 @@
   margin: auto;
   padding: 0px 10px;
 }
-.section5 .section5Cont .section5L .section5LBottom .section5LButton span {
+.section5 .section5Cont .section5L .section5LBottom .section5LButton span i {
   rotate: -45deg;
   padding: 5px;
 }
 .section5 .section5Cont .section5R {
   display: flex;
+  width: 50%;
 }
 .section5 .section5Cont .section5R .sectionRCardCont {
   width: 80%;
+}
+.section5 .section5Cont .section5R .sectionRCardCont .section5RCard {
+  width: 92%;
+  padding: 45px;
+  background: #0a183f;
+  border-top-right-radius: 117px;
+  border-bottom-left-radius: 117px;
+  margin: auto;
+  position: relative;
+}
+.section5 .section5Cont .section5R .sectionRCardCont .section5RCard .sec5RCardProfile {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0px 0px 0px 40px;
+}
+.section5 .section5Cont .section5R .sectionRCardCont .section5RCard .sec5RCardProfile img {
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 3px #858585;
+}
+.section5 .section5Cont .section5R .sectionRCardCont .section5RCard .section5RCardPara {
+  margin: 10px auto;
+  padding-bottom: 15px;
+  word-spacing: 1px;
+  line-height: 26px;
+  width: 75%;
+  border-bottom: solid 1px rgba(184, 184, 184, 0.3490196078);
+}
+.section5 .section5Cont .section5R .sectionRCardCont .section5RCard .review {
+  margin: 0px 0px 0px 45px;
+  display: flex;
+}
+.section5 .section5Cont .section5R .sectionRCardCont .section5RCard .review .author {
+  font-size: 20px;
+  font-weight: 700;
+}
+.section5 .section5Cont .section5R .sectionRCardCont .section5RCard .review .author span {
+  font-weight: 200;
+  font-size: 16px;
+  color: gainsboro;
+}
+.section5 .section5Cont .section5R .sectionRCardCont .section5RCard .review .stars {
+  margin: auto;
+  color: yellow;
+  font-size: 20px;
+}
+.section5 .section5Cont .section5R .sectionRCardCont .section5RCard::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 45px;
+  right: 0px;
+  background-image: linear-gradient(-76deg, #3b7bf7 1%, #47ff00 36%, #ffde00 71%, #eb0ef7 100%);
+  border-top-right-radius: 117px;
+  border-bottom-left-radius: 117px;
+  rotate: 10deg;
+  content: " ";
+  z-index: -1;
+  top: 0;
+}
+
+.section5::before {
+  display: block;
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background-color: rgb(0, 7, 26);
+  background-image: url(../images/tm_bg_shape.webp);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.section6 {
+  background: url(../images/cta_shape2.png) left, url(../images/cta_shape3.png) right;
+  background-color: rgb(0, 7, 26);
+  background-size: 400px;
+  background-repeat: no-repeat;
+  padding: 3% 0px;
+}
+.section6 .section6Cont {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+}
+.section6 .section6Cont .section6Text {
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+}
+.footer {
+  background-color: rgb(0, 7, 26);
+  color: white;
+}
+.footer .footerContainer {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  padding: 50px 0px;
+  justify-content: space-between;
+}
+.footer .footerContainer .footerL {
+  width: 25%;
+}
+.footer .footerContainer .footerL .footerLHead {
+  margin: 20px 0px;
+}
+.footer .footerContainer .footerL .footerLHead img {
+  padding: 0px 15px 0px 0px;
+}
+.footer .footerContainer .footerL .footerLHead a {
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+}
+.footer .footerContainer .footerL .footerLPara {
+  font-size: 16px;
+  color: gainsboro;
+  margin: 10px 0px;
+}
+.footer .footerContainer .footerL .primaryButton {
+  margin: 30px 0px;
+}
+.footer .footerContainer .footerL .primaryButton a {
+  color: black;
+}
+.footer .footerContainer .footerM {
+  width: 25%;
+}
+.footer .footerContainer .footerM .footerMHead {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 20px 0px;
+}
+.footer .footerContainer .footerM .footerMPara {
+  font-size: 16px;
+  color: gainsboro;
+  margin: 10px 0px;
+}
+.footer .footerContainer .footerM .footerMMAil {
+  margin: 30px 0px 20px;
+}
+.footer .footerContainer .footerM .footerMMAil form {
+  background-color: #361f61;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.footer .footerContainer .footerM .footerMMAil form input {
+  background: none;
+  border: none;
+}
+.footer .footerContainer .footerM .footerMMAil form input::-moz-placeholder {
+  color: white;
+  padding: 0px 10px;
+}
+.footer .footerContainer .footerM .footerMMAil form input::placeholder {
+  color: white;
+  padding: 0px 10px;
+}
+.footer .footerContainer .footerM .footerMMAil form i {
+  padding: 15px 20px;
+  background-color: transparent;
+  background-image: linear-gradient(90deg, #f90058 0%, #3e1cf3 100%);
+}
+.footer .footerContainer .footerM .footerSocials {
+  display: flex;
+}
+.footer .footerContainer .footerM .footerSocials .footerSocial {
+  padding: 0px 30px 0px 0px;
+}
+.footer .footerContainer .footerM .footerSocials .footerSocial a {
+  font-size: 21px;
+  color: gainsboro;
+}
+.footer .footerContainer .footerM .footerSocials .footerSocial a:hover {
+  color: #f90058;
+}
+.footer .footerContainer .footerR {
+  width: 25%;
+}
+.footer .footerContainer .footerR .footerRHead {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 20px 0px;
+}
+.footer .footerContainer .footerR .footerLocation {
+  font-size: 15px;
+  margin: 10px 0px;
+}
+.footer .footerContainer .footerR .footerLocation i {
+  color: #f90058;
+  padding-right: 8px;
+}
+.footer .footerContainer .footerR .footerLocation a {
+  color: gainsboro;
+}
+.footer .footerContainer .footerR .footerRPara {
+  font-size: 14px;
+  color: gainsboro;
+  margin: 10px 0px;
+}
+.footer .copyright .copyrightCont .copyrightText {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  border-top: solid #616161 1px;
+  padding: 20px 0px 40px;
 }/*# sourceMappingURL=skeleton.css.map */
