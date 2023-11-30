@@ -14,3 +14,8 @@ $(document).ready(function(){
         dots:true,
     })
   });
+  
+  function menuToggle(){
+    const side=document.querySelector(".sideMenu")
+    side.classList.toggle("active")
+  }

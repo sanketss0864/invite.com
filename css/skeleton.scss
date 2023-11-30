@@ -12,6 +12,10 @@
 
 ::-webkit-scrollbar-thumb {
   background: rgb(18, 18, 67);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -81,12 +85,97 @@ a:hover {
   display: block;
   width: auto;
 }
+.navbar {
+  // background-color: #00071a;
+  margin-top: 20px;
+  color: white;
+  position: absolute;
+  width: 100%;
+  .navbarCont {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    .navbarLinks {
+      display: flex;
+      .navbarLogo {
+        width: 30%;
+        margin-right: 40px;
+      }
+      .navbarlink {
+        display: flex;
+        padding: 0px 20px;
+        margin: auto;
+        .dropdown {
+          position: relative;
+          display: inline-block;
+          .dropbtn {
+            padding: 22px 0px;
+          }
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #0a183f;
+            min-width: 160px;
+            top: 60px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            a {
+              color: white;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+            }
+            a:hover {
+              color: #bfef2d;
+            }
+          }
+        }
+        .dropdown:hover {
+          .dropdown-content {
+            display: block;
+          }
+
+          .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+          }
+        }
+      }
+    }
+    .menuContainer {
+      display: flex;
+      .navContact {
+        display: flex;
+        margin: 0px 40px;
+        .phoneLogo {
+          margin: auto;
+          i {
+            font-size: 24px;
+            padding: 0px 10px;
+          }
+        }
+        .phoneNo {
+          margin: auto;
+        }
+      }
+      .navButton {
+        padding: 0px 10px;
+        margin: auto;
+
+        img {
+          height: 30px;
+        }
+      }
+    }
+  }
+}
 .section1 {
   background-color: #00071a;
   background-image: url(../images/slider_line_shape.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 0% 27%;
+  padding-top: 66px;
   .section1Cont {
     display: flex;
     background: url(../images/slider_shape_33.png);
@@ -599,7 +688,7 @@ a:hover {
     .featuresL {
       position: relative;
       display: flex;
-      margin-right:95px ;
+      margin-right: 95px;
       img {
       }
       .Image2 {
@@ -996,4 +1085,107 @@ a:hover {
       }
     }
   }
+}
+.sideMenu {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  position: absolute;
+  z-index: 2;
+  background-color: #00000a;
+  width: 50%;
+  color: rgb(202, 202, 202);
+  .closeButton {
+    font-size: 30px;
+    font-weight: 700;
+    width: fit-content;
+    margin: 0px 0px 0px auto;
+    .closeIcon {
+      padding: 4px 20px;
+      height: 30px;
+    }
+  }
+  .sideMenuCont {
+    margin: 24px 116px;
+    .webLogo {
+    }
+    .logoPara {
+      margin: 25px 0px;
+      width: 79%;
+    }
+    .menuList {
+      .menuItem {
+        margin: 12px 0px;
+        font-size: 33px;
+        .dropdown {
+          position: relative;
+          display: inline-block;
+         
+          .dropbtn {
+            
+          }
+          .dropdown-content {
+            font-size: 20px;
+            display: none;
+            position: absolute;
+            background-color: #0a183f;
+            min-width: 160px;
+            left: 160px;
+            top: 10px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            a {
+              color: white;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+            }
+            a:hover {
+              color: #bfef2d;
+            }
+          }
+        }
+        .dropdown:hover {
+          .dropdown-content {
+            display: block;
+          }
+
+          .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+          }
+        }
+      }
+    }
+    .contactDetails{
+      display: flex;
+      .contactPhone{
+        span{
+          color: white;
+          font-size: 23px;
+          margin: 0px 0px 0px 20px;
+          padding-right:20px ;
+          border-right:solid rgba(255, 255, 255, 0.422) 1px;
+          font-weight: 600;
+        }
+      }
+      .contactMail{
+        padding-left: 20px;
+        margin: auto 0px;
+      }
+    }
+
+    .contactSocials{
+      display: flex;
+      padding: 20px 0PX;
+      .contactSocial{
+    font-size: 20px;
+    padding: 0px 30px 0px 0px;
+      }
+    }
+  }
+}
+
+.active {
+  display: block;
 }

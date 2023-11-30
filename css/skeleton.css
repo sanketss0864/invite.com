@@ -12,6 +12,10 @@
 
 ::-webkit-scrollbar-thumb {
   background: rgb(18, 18, 67);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -75,12 +79,93 @@ a:hover {
   width: auto;
 }
 
+.navbar {
+  margin-top: 20px;
+  color: white;
+  position: absolute;
+  width: 100%;
+}
+.navbar .navbarCont {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+}
+.navbar .navbarCont .navbarLinks {
+  display: flex;
+}
+.navbar .navbarCont .navbarLinks .navbarLogo {
+  width: 30%;
+  margin-right: 40px;
+}
+.navbar .navbarCont .navbarLinks .navbarlink {
+  display: flex;
+  padding: 0px 20px;
+  margin: auto;
+}
+.navbar .navbarCont .navbarLinks .navbarlink .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.navbar .navbarCont .navbarLinks .navbarlink .dropdown .dropbtn {
+  padding: 22px 0px;
+}
+.navbar .navbarCont .navbarLinks .navbarlink .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0a183f;
+  min-width: 160px;
+  top: 60px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.navbar .navbarCont .navbarLinks .navbarlink .dropdown .dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.navbar .navbarCont .navbarLinks .navbarlink .dropdown .dropdown-content a:hover {
+  color: #bfef2d;
+}
+.navbar .navbarCont .navbarLinks .navbarlink .dropdown:hover .dropdown-content {
+  display: block;
+}
+.navbar .navbarCont .navbarLinks .navbarlink .dropdown:hover .dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.navbar .navbarCont .menuContainer {
+  display: flex;
+}
+.navbar .navbarCont .menuContainer .navContact {
+  display: flex;
+  margin: 0px 40px;
+}
+.navbar .navbarCont .menuContainer .navContact .phoneLogo {
+  margin: auto;
+}
+.navbar .navbarCont .menuContainer .navContact .phoneLogo i {
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.navbar .navbarCont .menuContainer .navContact .phoneNo {
+  margin: auto;
+}
+.navbar .navbarCont .menuContainer .navButton {
+  padding: 0px 10px;
+  margin: auto;
+}
+.navbar .navbarCont .menuContainer .navButton img {
+  height: 30px;
+}
+
 .section1 {
   background-color: #00071a;
   background-image: url(../images/slider_line_shape.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 0% 27%;
+  padding-top: 66px;
 }
 .section1 .section1Cont {
   display: flex;
@@ -927,4 +1012,95 @@ a:hover {
   text-align: center;
   border-top: solid #616161 1px;
   padding: 20px 0px 40px;
+}
+
+.sideMenu {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  position: absolute;
+  z-index: 2;
+  background-color: #00000a;
+  width: 50%;
+  color: rgb(202, 202, 202);
+}
+.sideMenu .closeButton {
+  font-size: 30px;
+  font-weight: 700;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0px 0px 0px auto;
+}
+.sideMenu .closeButton .closeIcon {
+  padding: 4px 20px;
+  height: 30px;
+}
+.sideMenu .sideMenuCont {
+  margin: 24px 116px;
+}
+.sideMenu .sideMenuCont .logoPara {
+  margin: 25px 0px;
+  width: 79%;
+}
+.sideMenu .sideMenuCont .menuList .menuItem {
+  margin: 12px 0px;
+  font-size: 33px;
+}
+.sideMenu .sideMenuCont .menuList .menuItem .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.sideMenu .sideMenuCont .menuList .menuItem .dropdown .dropdown-content {
+  font-size: 20px;
+  display: none;
+  position: absolute;
+  background-color: #0a183f;
+  min-width: 160px;
+  left: 160px;
+  top: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.sideMenu .sideMenuCont .menuList .menuItem .dropdown .dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.sideMenu .sideMenuCont .menuList .menuItem .dropdown .dropdown-content a:hover {
+  color: #bfef2d;
+}
+.sideMenu .sideMenuCont .menuList .menuItem .dropdown:hover .dropdown-content {
+  display: block;
+}
+.sideMenu .sideMenuCont .menuList .menuItem .dropdown:hover .dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.sideMenu .sideMenuCont .contactDetails {
+  display: flex;
+}
+.sideMenu .sideMenuCont .contactDetails .contactPhone span {
+  color: white;
+  font-size: 23px;
+  margin: 0px 0px 0px 20px;
+  padding-right: 20px;
+  border-right: solid rgba(255, 255, 255, 0.422) 1px;
+  font-weight: 600;
+}
+.sideMenu .sideMenuCont .contactDetails .contactMail {
+  padding-left: 20px;
+  margin: auto 0px;
+}
+.sideMenu .sideMenuCont .contactSocials {
+  display: flex;
+  padding: 20px 0PX;
+}
+.sideMenu .sideMenuCont .contactSocials .contactSocial {
+  font-size: 20px;
+  padding: 0px 30px 0px 0px;
+}
+
+.active {
+  display: block;
 }/*# sourceMappingURL=skeleton.css.map */
