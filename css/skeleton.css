@@ -2,6 +2,22 @@
   font-family: Roboto, sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #00071a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(18, 18, 67);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -52,6 +68,11 @@ a:hover {
   border-radius: 20px;
   font-weight: 600;
   font-size: 18px;
+}
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: auto;
 }
 
 .section1 {
@@ -274,6 +295,128 @@ a:hover {
   position: absolute;
 }
 
+.sectionService {
+  position: relative;
+  color: white;
+}
+.sectionService .serviceCont .servicesTopHead {
+  margin-left: 5%;
+  color: white;
+  padding: 7px;
+  font-size: 20px;
+}
+.sectionService .serviceCont .servicesTopHead img {
+  padding: 5px 10px;
+}
+.sectionService .serviceCont .servicesHead {
+  color: white;
+  width: 55%;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 68px;
+  margin: 21px 0px;
+  margin-left: 5%;
+}
+.sectionService .serviceCont .servicesHead span {
+  color: #bfef2d;
+}
+.sectionService .serviceCont .servicesCardCont {
+  width: 80%;
+  display: flex;
+  padding-bottom: 50px;
+}
+.sectionService .serviceCont .servicesCardCont .servicesCard {
+  width: 90%;
+  padding-bottom: 80px;
+}
+.sectionService .serviceCont .servicesCardCont .servicesCard .servicesCardIcon {
+  position: relative;
+  height: 185px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.sectionService .serviceCont .servicesCardCont .servicesCard .servicesCardIcon img {
+  height: 51px;
+}
+.sectionService .serviceCont .servicesCardCont .servicesCard .servicesCardIcon::before {
+  content: "";
+  background: url(../images/feature_box_shape.webp);
+  position: absolute;
+  z-index: -1;
+  height: 200px;
+  width: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 0;
+  background-position: center;
+  opacity: 0.3;
+}
+.sectionService .serviceCont .servicesCardCont .servicesCard .servicesCardHead {
+  text-align: center;
+  font-size: 23px;
+}
+.sectionService .serviceCont .servicesCardCont .servicesCard .servicesCardPara {
+  text-align: center;
+  color: gainsboro;
+  margin: auto;
+  width: 69%;
+}
+.sectionService .serviceCont .servicesCardCont .servicesCard .primaryButton {
+  margin: 26px auto 0px;
+  position: relative;
+}
+.sectionService .serviceCont .servicesCardCont .servicesCard .primaryButton::before {
+  position: absolute;
+  content: "";
+  top: -49px;
+  left: -67px;
+  width: 286px;
+  height: 163px;
+  border-radius: 50%;
+  background-color: rgb(0, 7, 26);
+  z-index: -1;
+}
+.sectionService .serviceCont .servicesCardCont .servicesCard .primaryButton::after {
+  position: absolute;
+  content: "";
+  top: -42px;
+  left: -66px;
+  width: 284px;
+  height: 162px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #f90058 0%, #3e1cf3 100%);
+  z-index: -2;
+}
+.sectionService .serviceCont .servicesCardCont .servicesCard:hover .servicesCardIcon::before {
+  opacity: 1;
+}
+
+.sectionService::before {
+  display: block;
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+  background-color: rgb(0, 7, 26);
+}
+
+.sectionService::after {
+  display: block;
+  content: "";
+  height: 100%;
+  /* background-repeat: no-repeat; */
+  width: 100%;
+  top: 0;
+  position: absolute;
+  z-index: -2;
+  background: url(../images/services_bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
 .section4 {
   background-color: #00071a;
   position: relative;
@@ -401,6 +544,118 @@ a:hover {
   z-index: -1;
   -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 94%, 53.33% -1px);
           clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 94%, 53.33% -1px);
+}
+
+.Sectionfeatures {
+  position: relative;
+  color: white;
+}
+.Sectionfeatures .featuresCont {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+.Sectionfeatures .featuresCont .featuresL {
+  position: relative;
+  display: flex;
+  margin-right: 95px;
+}
+.Sectionfeatures .featuresCont .featuresL .Image2 {
+  padding: 20px;
+  height: 100px;
+  justify-content: center;
+  display: flex;
+  position: relative;
+}
+.Sectionfeatures .featuresCont .featuresL .Image2 img {
+  position: absolute;
+  right: 57px;
+  height: 87px;
+  top: 49px;
+}
+.Sectionfeatures .featuresCont .featuresL .Image2::after {
+  content: "";
+  background: url(../images/feature_box_shape.webp);
+  position: absolute;
+  z-index: -1;
+  height: 300px;
+  width: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -40px;
+  right: 0;
+  background-position: center;
+}
+.Sectionfeatures .featuresCont .featuresR .featuresRTopHead {
+  font-size: 20px;
+  color: #bababa;
+  font-weight: 500;
+}
+.Sectionfeatures .featuresCont .featuresR .featuresRTopHead img {
+  padding: 5px;
+}
+.Sectionfeatures .featuresCont .featuresR .featuresRHead {
+  width: 65%;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 68px;
+}
+.Sectionfeatures .featuresCont .featuresR .featuresRHead span {
+  color: #bfef2d;
+}
+.Sectionfeatures .featuresCont .featuresR .featuresRPara {
+  color: gainsboro;
+  text-align: justify;
+  font-size: 19px;
+}
+.Sectionfeatures .featuresCont .featuresR .featuresRList ul {
+  margin: 30px 0px;
+}
+.Sectionfeatures .featuresCont .featuresR .featuresRList ul li {
+  list-style: none;
+  position: relative;
+  color: gainsboro;
+  text-align: justify;
+  font-size: 19px;
+  margin: 25px 30px;
+}
+.Sectionfeatures .featuresCont .featuresR .featuresRList ul li:before {
+  content: "";
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  left: -56px;
+  top: 0;
+  background: url(../images/correct.png);
+  background-repeat: no-repeat;
+  background-size: 5%;
+}
+
+.Sectionfeatures::before {
+  display: block;
+  content: "";
+  height: 102%;
+  width: 100%;
+  padding-bottom: 20px;
+  position: absolute;
+  z-index: -1;
+  background-color: rgb(0, 7, 26);
+}
+
+.Sectionfeatures::after {
+  content: "";
+  background: url(../images/feature_shape_bg.png);
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: 43%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -67px;
+  background-position: center;
+  z-index: -1;
+  background-position: 68px 38px;
+  background-size: 100%;
 }
 
 .section5 {

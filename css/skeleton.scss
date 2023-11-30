@@ -1,6 +1,22 @@
 .body {
   font-family: Roboto, sans-serif;
 }
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #00071a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(18, 18, 67);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 a:hover {
   text-decoration: none;
 }
@@ -61,7 +77,10 @@ a:hover {
   font-weight: 600;
   font-size: 18px;
 }
-
+.owl-carousel .owl-item img {
+  display: block;
+  width: auto;
+}
 .section1 {
   background-color: #00071a;
   background-image: url(../images/slider_line_shape.png);
@@ -312,6 +331,133 @@ a:hover {
     }
   }
 }
+.sectionService {
+  position: relative;
+  color: white;
+  .serviceCont {
+    .servicesTopHead {
+      margin-left: 5%;
+      color: white;
+      padding: 7px;
+      font-size: 20px;
+      img {
+        padding: 5px 10px;
+      }
+    }
+
+    .servicesHead {
+      color: white;
+      width: 55%;
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 68px;
+      margin: 21px 0px;
+      margin-left: 5%;
+      span {
+        color: #bfef2d;
+      }
+    }
+    .servicesCardCont {
+      width: 80%;
+      display: flex;
+      padding-bottom: 50px;
+      .servicesCard {
+        width: 90%;
+        padding-bottom: 80px;
+        .servicesCardIcon {
+          position: relative;
+          height: 185px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 35px;
+          img {
+            height: 51px;
+          }
+        }
+        .servicesCardIcon::before {
+          content: "";
+          background: url(../images/feature_box_shape.webp);
+          position: absolute;
+          z-index: -1;
+          height: 200px;
+          width: 200px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          top: 0;
+
+          background-position: center;
+          opacity: 0.3;
+        }
+
+        .servicesCardHead {
+          text-align: center;
+          font-size: 23px;
+        }
+        .servicesCardPara {
+          text-align: center;
+          color: gainsboro;
+          margin: auto;
+          width: 69%;
+        }
+        .primaryButton {
+          margin: 26px auto 0px;
+          position: relative;
+        }
+        .primaryButton::before {
+          position: absolute;
+          content: "";
+          top: -49px;
+          left: -67px;
+          width: 286px;
+          height: 163px;
+          border-radius: 50%;
+          background-color: rgb(0, 7, 26);
+          z-index: -1;
+        }
+        .primaryButton::after {
+          position: absolute;
+          content: "";
+          top: -42px;
+          left: -66px;
+          width: 284px;
+          height: 162px;
+          border-radius: 50%;
+          background: linear-gradient(90deg, #f90058 0%, #3e1cf3 100%);
+          z-index: -2;
+        }
+      }
+      .servicesCard:hover {
+        .servicesCardIcon::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+.sectionService::before {
+  display: block;
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+  background-color: rgb(0, 7, 26);
+}
+.sectionService::after {
+  display: block;
+  content: "";
+  height: 100%;
+  /* background-repeat: no-repeat; */
+  width: 100%;
+  top: 0;
+  position: absolute;
+  z-index: -2;
+  background: url(../images/services_bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
 .section4 {
   background-color: #00071a;
   position: relative;
@@ -442,6 +588,122 @@ a:hover {
       clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 94%, 53.33% -1px);
     }
   }
+}
+.Sectionfeatures {
+  position: relative;
+  color: white;
+  .featuresCont {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    .featuresL {
+      position: relative;
+      display: flex;
+      margin-right:95px ;
+      img {
+      }
+      .Image2 {
+        padding: 20px;
+        height: 100px;
+        justify-content: center;
+        display: flex;
+        position: relative;
+        img {
+          position: absolute;
+          right: 57px;
+          height: 87px;
+          top: 49px;
+        }
+      }
+      .Image2::after {
+        content: "";
+        background: url(../images/feature_box_shape.webp);
+        position: absolute;
+        z-index: -1;
+        height: 300px;
+        width: 200px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: -40px;
+        right: 0;
+        background-position: center;
+      }
+    }
+
+    .featuresR {
+      .featuresRTopHead {
+        font-size: 20px;
+        color: #bababa;
+        font-weight: 500;
+        img {
+          padding: 5px;
+        }
+      }
+      .featuresRHead {
+        width: 65%;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 68px;
+        span {
+          color: #bfef2d;
+        }
+      }
+      .featuresRPara {
+        color: gainsboro;
+        text-align: justify;
+        font-size: 19px;
+      }
+      .featuresRList {
+        ul {
+          margin: 30px 0px;
+          li {
+            list-style: none;
+            position: relative;
+            color: gainsboro;
+            text-align: justify;
+            font-size: 19px;
+            margin: 25px 30px;
+          }
+          li:before {
+            content: "";
+            height: 100px;
+            width: 100%;
+            position: absolute;
+            left: -56px;
+            top: 0;
+            background: url(../images/correct.png);
+            background-repeat: no-repeat;
+            background-size: 5%;
+          }
+        }
+      }
+    }
+  }
+}
+.Sectionfeatures::before {
+  display: block;
+  content: "";
+  height: 102%;
+  width: 100%;
+  padding-bottom: 20px;
+  position: absolute;
+  z-index: -1;
+  background-color: rgb(0, 7, 26);
+}
+.Sectionfeatures::after {
+  content: "";
+  background: url(../images/feature_shape_bg.png);
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: 43%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -67px;
+  background-position: center;
+  z-index: -1;
+  background-position: 68px 38px;
+  background-size: 100%;
 }
 .section5 {
   color: white;
@@ -628,7 +890,7 @@ a:hover {
       .footerLHead {
         margin: 20px 0px;
         img {
-            padding: 0px 15px 0px 0px
+          padding: 0px 15px 0px 0px;
         }
         a {
           color: white;
@@ -651,7 +913,6 @@ a:hover {
     .footerM {
       width: 25%;
       .footerMHead {
-       
         font-size: 32px;
         font-weight: 600;
         margin: 20px 0px;
@@ -662,7 +923,7 @@ a:hover {
         margin: 10px 0px;
       }
       .footerMMAil {
-        margin: 30px 0px 20px;   
+        margin: 30px 0px 20px;
         form {
           background-color: #361f61;
           width: fit-content;
@@ -670,7 +931,7 @@ a:hover {
             background: none;
             border: none;
           }
-          input::placeholder{
+          input::placeholder {
             color: white;
             padding: 0px 10px;
           }
@@ -684,21 +945,20 @@ a:hover {
       .footerSocials {
         display: flex;
         .footerSocial {
-            padding:0px 30px 0px 0px ;
-            a{
-                font-size: 21px;
-                color: gainsboro;
-            }
-            a:hover{
-               color: #f90058; 
-            }
+          padding: 0px 30px 0px 0px;
+          a {
+            font-size: 21px;
+            color: gainsboro;
+          }
+          a:hover {
+            color: #f90058;
+          }
         }
       }
     }
     .footerR {
       width: 25%;
       .footerRHead {
-      
         font-size: 32px;
         font-weight: 600;
         margin: 20px 0px;
@@ -706,20 +966,20 @@ a:hover {
       .footerAdress {
       }
       .footerLocation {
-        font-size: 15px;  
-        margin: 10px 0px;  
-        i{
-            color: #f90058;
-            padding-right: 8px;
+        font-size: 15px;
+        margin: 10px 0px;
+        i {
+          color: #f90058;
+          padding-right: 8px;
         }
-        a{
-            color: gainsboro;
+        a {
+          color: gainsboro;
         }
       }
       .footerRSubHead {
       }
       .footerRPara {
-        font-size: 14px;  
+        font-size: 14px;
         color: gainsboro;
         margin: 10px 0px;
       }
