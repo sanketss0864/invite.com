@@ -17,5 +17,7 @@ $(document).ready(function(){
   
   function menuToggle(){
     const side=document.querySelector(".sideMenu")
+    const back=document.querySelector(".backdrop")
     side.classList.toggle("active")
+    back.classList.toggle("active")
   }
