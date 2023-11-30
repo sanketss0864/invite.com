@@ -1091,8 +1091,8 @@ a:hover {
   bottom: 0;
   right: 0;
   display: none;
-  position: absolute;
-  z-index: 2;
+  position: fixed;
+  z-index: 10;
   background-color: #00000a;
   width: 50%;
   color: rgb(202, 202, 202);
