@@ -560,7 +560,7 @@ a:hover {
       }
     }
   }
-}
+
 .sectionService::before {
   display: block;
   content: "";
@@ -1330,6 +1330,89 @@ border-radius: 50%;}
     }
   }
 }
+.ceoTalk{
+  background-color: black;
+  .ceoTalkContent{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding : 60px 0px;
+    .ceoTalkCard{
+      position: relative;
+      width: 60%;
+      background: white;
+      height: fit-content;
+      margin: 50px 30px;
+      padding: 40px;
+      .ceoCardText{
+        font-family: sans-serif;
+        font-weight: 600;
+        font-size: 21px;
+      }
+      .CeoCardBottom{
+        display: flex;
+        justify-content: space-between;
+        .ceoCardButton{
+          margin: 45px 0px 30px;
+          a{
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            background-color: orangered;
+            padding: 12px;
+            width: fit-content;
+            border-radius: 23px;
+            margin: 20px;
+          }
+          a:hover{
+            color: white;
+            background-color: black;
+          }
+        }
+        .ceoSignature{
+          margin: auto 0px;
+          .ceoName{
+
+          }
+          .ceoSign{
+
+          }
+        }
+      }
+      .svg{
+        height: 0;
+        .svg1{
+          height: 100%;
+    position: absolute;
+    top: -16px;
+        }
+        .svg2{
+          height: 100%;
+          position: absolute;
+          left: -39px;
+          bottom: -140px;
+        }  
+      }
+    }
+    .ceoImg{
+      width: 0;
+      img{
+        width: 579px;
+    position: relative;
+    right: 135px;
+    top: 60px;
+      }
+    }
+
+  }
+}
+
+
+
+
+
+
+
 
 
 

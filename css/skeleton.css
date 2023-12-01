@@ -296,7 +296,6 @@ a:hover {
   padding: 4rem 0;
   background-color: #f8f8f8;
   overflow: clip;
-  background-image: url(../images/a_shape3.png);
   background-repeat: no-repeat;
   background-position: 0% 106%;
 }
@@ -436,23 +435,23 @@ a:hover {
   font-weight: 700;
   line-height: 68px;
   text-align: center;
-  margin: 2rem 0 3rem 0;
+  margin: 15rem 0 3rem 0;
 }
-.sectionService .serviceCont .servicesHead span {
+.sectionService .serviceCont span {
   color: #bfef2d;
 }
-.sectionService .serviceCont .servicesCardCont {
+.sectionService .servicesCardCont {
   width: 97%;
   padding-bottom: 50px;
   margin: auto;
 }
-.sectionService .serviceCont .servicesCardCont .servicesCard {
+.sectionService .servicesCardCont .servicesCard {
   width: 98%;
   background: rgba(255, 255, 255, 0.1215686275);
   padding: 30px;
   border-radius: 10px;
 }
-.sectionService .serviceCont .servicesCardCont .servicesCard .servicesCardIcon {
+.sectionService .servicesCardCont .servicesCard .servicesCardIcon {
   position: relative;
   display: flex;
   justify-content: center;
@@ -463,10 +462,10 @@ a:hover {
   background: #fff;
   align-items: center;
 }
-.sectionService .serviceCont .servicesCardCont .servicesCard .servicesCardIcon img {
+.sectionService .servicesCardCont .servicesCard .servicesCardIcon img {
   width: 90px;
 }
-.sectionService .serviceCont .servicesCardCont .servicesCard .servicesCardHead {
+.sectionService .servicesCardCont .servicesCard .servicesCardHead {
   text-align: center;
   font-size: 30px;
   font-weight: 700;
@@ -474,7 +473,7 @@ a:hover {
   line-height: 40px;
   min-height: 60px;
 }
-.sectionService .serviceCont .servicesCardCont .servicesCard .servicesCardPara {
+.sectionService .servicesCardCont .servicesCard .servicesCardPara {
   text-align: center;
   color: gainsboro;
   margin: auto;
@@ -482,14 +481,14 @@ a:hover {
   font-size: 15px;
   line-height: 25px;
 }
-.sectionService .serviceCont .servicesCardCont .servicesCard .primaryButton {
+.sectionService .servicesCardCont .servicesCard .primaryButton {
   margin: 26px auto 0px;
   position: relative;
   width: 200px;
   justify-content: center;
   align-items: center;
 }
-.sectionService .serviceCont .servicesCardCont .servicesCard:hover .servicesCardIcon::before {
+.sectionService .servicesCardCont .servicesCard:hover .servicesCardIcon::before {
   opacity: 1;
 }
 
@@ -1190,7 +1189,7 @@ a:hover {
   margin: auto;
   padding: 98px 69px 85px;
   position: relative;
-  top: 50px;
+  top: 140px;
   border: solid black;
   background-color: white;
   box-shadow: 10px 10px 0px #43ffdc;
@@ -1221,6 +1220,78 @@ a:hover {
 .innovationCard .innovationCardCont .innovationButton a:hover {
   color: white;
   background-color: black;
+}
+
+.ceoTalk {
+  background-color: black;
+}
+.ceoTalk .ceoTalkContent {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  padding: 60px 0px;
+}
+.ceoTalk .ceoTalkContent .ceoTalkCard {
+  position: relative;
+  width: 60%;
+  background: white;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 50px 30px;
+  padding: 40px;
+}
+.ceoTalk .ceoTalkContent .ceoTalkCard .ceoCardText {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+}
+.ceoTalk .ceoTalkContent .ceoTalkCard .CeoCardBottom {
+  display: flex;
+  justify-content: space-between;
+}
+.ceoTalk .ceoTalkContent .ceoTalkCard .CeoCardBottom .ceoCardButton {
+  margin: 45px 0px 30px;
+}
+.ceoTalk .ceoTalkContent .ceoTalkCard .CeoCardBottom .ceoCardButton a {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: orangered;
+  padding: 12px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 23px;
+  margin: 20px;
+}
+.ceoTalk .ceoTalkContent .ceoTalkCard .CeoCardBottom .ceoCardButton a:hover {
+  color: white;
+  background-color: black;
+}
+.ceoTalk .ceoTalkContent .ceoTalkCard .CeoCardBottom .ceoSignature {
+  margin: auto 0px;
+}
+.ceoTalk .ceoTalkContent .ceoTalkCard .svg {
+  height: 0;
+}
+.ceoTalk .ceoTalkContent .ceoTalkCard .svg .svg1 {
+  height: 100%;
+  position: absolute;
+  top: -16px;
+}
+.ceoTalk .ceoTalkContent .ceoTalkCard .svg .svg2 {
+  height: 100%;
+  position: absolute;
+  left: -39px;
+  bottom: -140px;
+}
+.ceoTalk .ceoTalkContent .ceoImg {
+  width: 0;
+}
+.ceoTalk .ceoTalkContent .ceoImg img {
+  width: 579px;
+  position: relative;
+  right: 135px;
+  top: 60px;
 }
 
 @media (max-width: 768px) {
