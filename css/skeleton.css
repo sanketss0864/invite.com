@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: "Livvic", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -26,8 +27,24 @@ body {
   background: #555;
 }
 
+p, a, h1, h2, h3, h4, h5, h6, span, li, div {
+  letter-spacing: 2px;
+}
+
 a:hover {
   text-decoration: none;
+}
+
+@-webkit-keyframes move {
+  0% {
+    transform: rotate(90deg) translate(4px, 0px);
+  }
+  50% {
+    transform: rotate(90deg) translate(-4px, 0px);
+  }
+  100% {
+    transform: rotate(90deg) translate(4px, 0px);
+  }
 }
 
 @keyframes move {
@@ -39,6 +56,23 @@ a:hover {
   }
   100% {
     transform: rotate(90deg) translate(4px, 0px);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 @keyframes rotate {
@@ -68,14 +102,18 @@ a:hover {
 }
 
 .primaryButton {
-  color: black;
-  background-color: #bfef2d;
+  color: #fff;
   padding: 12px 30px;
-  width: -moz-fit-content;
-  width: fit-content;
+  min-width: 220px;
+  max-width: 300px;
   border-radius: 20px;
   font-weight: 600;
   font-size: 18px;
+  background-image: linear-gradient(120deg, #fecc5f 0%, #7900b5 100%);
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .owl-carousel .owl-item img {
@@ -171,7 +209,7 @@ a:hover {
   background-image: url(../images/slider_line_shape.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: 0% 27%;
+  background-position: center;
   padding-top: 66px;
 }
 .section1 .section1Cont {
@@ -191,21 +229,24 @@ a:hover {
   border-radius: 50%;
 }
 .section1 .section1Cont .section1M {
-  width: 40%;
+  width: 60%;
   border-left: solid #4d4747 1px;
   padding-left: 15px;
+  margin-top: 3rem;
 }
 .section1 .section1Cont .section1M .section1Head {
   color: white;
-  font-size: 75px;
+  font-size: 43px;
   font-weight: 700;
-  line-height: 88px;
+  line-height: 60px;
 }
 .section1 .section1Cont .section1M .section1Para {
-  width: 25rem;
+  width: 29rem;
   color: white;
-  font-size: 19px;
+  font-size: 20px;
   padding: 18px 0px;
+  line-height: 30px;
+  margin: 1rem 0;
 }
 .section1 .section1Cont .section1M .primaryButton .upArrow {
   padding: 0px 5px;
@@ -218,6 +259,7 @@ a:hover {
 .section1 .section1Cont .section1M .section1Card {
   display: flex;
   background-color: #212738;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 0px 20px 0px 0px;
@@ -244,7 +286,8 @@ a:hover {
 }
 .section1 .section1Cont .section1M .subButton {
   color: white;
-  writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
   text-orientation: mixed;
   transform: rotate(180deg);
   padding: 10px;
@@ -255,7 +298,8 @@ a:hover {
 .section1 .section1Cont .section1M .subButton i {
   transform: rotate(90deg);
   padding: 5px;
-  animation: move 2s linear infinite;
+  -webkit-animation: move 2s linear infinite;
+          animation: move 2s linear infinite;
 }
 .section1 .section1Cont .section1R img {
   width: 95%;
@@ -265,7 +309,8 @@ a:hover {
   margin: 169px 0px;
 }
 .section1 .section1Cont .socials .social {
-  writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
   text-orientation: mixed;
   transform: rotate(180deg);
   padding: 20px;
@@ -281,7 +326,8 @@ a:hover {
 }
 
 .section2 {
-  background-color: #00071a;
+  padding: 4rem 0;
+  background-color: #f8f8f8;
   overflow: clip;
   background-image: url(../images/a_shape3.png);
   background-repeat: no-repeat;
@@ -300,10 +346,13 @@ a:hover {
   background-repeat: no-repeat;
 }
 .section2 .section2Cont .section2L {
-  margin: 66px 72px;
+  margin: 50px;
+}
+.section2 .section2Cont .section2L img {
+  width: 100%;
 }
 .section2 .section2Cont .section2M {
-  width: 30%;
+  width: 49%;
   margin: 66px 50px 0px 0px;
 }
 .section2 .section2Cont .section2M .section2topHead {
@@ -312,38 +361,40 @@ a:hover {
   font-weight: 500;
 }
 .section2 .section2Cont .section2M .section2topHead img {
-  padding: 5px;
-  height: 60px;
+  padding: 0px;
+  height: 50px;
 }
 .section2 .section2Cont .section2M .section2Head {
-  width: 55%;
-  font-size: 60px;
+  width: 100%;
+  font-size: 33px;
   font-weight: 700;
-  line-height: 68px;
+  line-height: 48px;
 }
 .section2 .section2Cont .section2M .section2Head span {
   color: #bfef2d;
 }
 .section2 .section2Cont .section2M .section2Para {
   color: gainsboro;
-  text-align: justify;
-  font-size: 19px;
+  font-size: 16px;
+  line-height: 27px;
+  margin-top: 10px;
 }
 .section2 .section2Cont .section2M .primaryButton {
   margin: 32px 0px;
 }
 .section2 .section2Cont .section2R {
-  width: 20%;
+  width: 15%;
   position: relative;
 }
 .section2 .section2Cont .section2R .section2RCard {
   background-color: #00071a;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 10px;
   border-radius: 100px;
   position: relative;
-  right: 116px;
+  right: 38px;
   bottom: 60px;
 }
 .section2 .section2Cont .section2R .section2RCard .section2CardCont {
@@ -359,16 +410,19 @@ a:hover {
   border-radius: 100px;
   padding: 49px 0px;
   height: -moz-fit-content;
+  height: -webkit-fit-content;
   height: fit-content;
 }
 .section2 .section2Cont .section2R .section2RCard .section2CardCont .cardInterior .crystalImg img {
   position: absolute;
   top: -113px;
-  animation: rotate 14s 2s linear infinite;
+  -webkit-animation: rotate 14s 2s linear infinite;
+          animation: rotate 14s 2s linear infinite;
 }
 .section2 .section2Cont .section2R .section2RCard .section2CardCont .cardInterior .section2CardHead {
   font-size: 55px;
   font-weight: 700;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
@@ -383,6 +437,7 @@ a:hover {
   font-size: 17px;
   top: -165px;
   left: 159px;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 50%;
@@ -400,6 +455,7 @@ a:hover {
 .sectionService {
   position: relative;
   color: white;
+  overflow: hidden;
 }
 .sectionService .serviceCont .servicesTopHead {
   margin-left: 5%;
@@ -413,84 +469,63 @@ a:hover {
 }
 .sectionService .serviceCont .servicesHead {
   color: white;
-  width: 55%;
+  width: 100%;
   font-size: 60px;
   font-weight: 700;
   line-height: 68px;
-  margin: 21px 0px;
-  margin-left: 5%;
+  text-align: center;
+  margin: 2rem 0 3rem 0;
 }
 .sectionService .serviceCont .servicesHead span {
   color: #bfef2d;
 }
 .sectionService .serviceCont .servicesCardCont {
-  width: 80%;
-  display: flex;
+  width: 97%;
   padding-bottom: 50px;
+  margin: auto;
 }
 .sectionService .serviceCont .servicesCardCont .servicesCard {
-  width: 90%;
-  padding-bottom: 80px;
+  width: 98%;
+  background: rgba(255, 255, 255, 0.1215686275);
+  padding: 30px;
+  border-radius: 10px;
 }
 .sectionService .serviceCont .servicesCardCont .servicesCard .servicesCardIcon {
   position: relative;
-  height: 185px;
   display: flex;
   justify-content: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 1rem auto;
+  background: #fff;
   align-items: center;
-  margin-bottom: 35px;
 }
 .sectionService .serviceCont .servicesCardCont .servicesCard .servicesCardIcon img {
-  height: 51px;
-}
-.sectionService .serviceCont .servicesCardCont .servicesCard .servicesCardIcon::before {
-  content: "";
-  background: url(../images/feature_box_shape.webp);
-  position: absolute;
-  z-index: -1;
-  height: 200px;
-  width: 200px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  top: 0;
-  background-position: center;
-  opacity: 0.3;
+  width: 90px;
 }
 .sectionService .serviceCont .servicesCardCont .servicesCard .servicesCardHead {
   text-align: center;
-  font-size: 23px;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 40px;
+  min-height: 60px;
 }
 .sectionService .serviceCont .servicesCardCont .servicesCard .servicesCardPara {
   text-align: center;
   color: gainsboro;
   margin: auto;
-  width: 69%;
+  width: 100%;
+  font-size: 15px;
+  line-height: 25px;
 }
 .sectionService .serviceCont .servicesCardCont .servicesCard .primaryButton {
   margin: 26px auto 0px;
   position: relative;
-}
-.sectionService .serviceCont .servicesCardCont .servicesCard .primaryButton::before {
-  position: absolute;
-  content: "";
-  top: -49px;
-  left: -67px;
-  width: 286px;
-  height: 163px;
-  border-radius: 50%;
-  background-color: rgb(0, 7, 26);
-  z-index: -1;
-}
-.sectionService .serviceCont .servicesCardCont .servicesCard .primaryButton::after {
-  position: absolute;
-  content: "";
-  top: -42px;
-  left: -66px;
-  width: 284px;
-  height: 162px;
-  border-radius: 50%;
-  background: linear-gradient(90deg, #f90058 0%, #3e1cf3 100%);
-  z-index: -2;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
 }
 .sectionService .serviceCont .servicesCardCont .servicesCard:hover .servicesCardIcon::before {
   opacity: 1;
@@ -515,7 +550,6 @@ a:hover {
   top: 0;
   position: absolute;
   z-index: -2;
-  background: url(../images/services_bg.png);
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -525,10 +559,6 @@ a:hover {
   position: relative;
   z-index: 3;
   overflow: hidden;
-}
-.section4 .section4Cont {
-  padding-top: 10%;
-  padding-bottom: 7%;
 }
 .section4 .section4Cont .section4TopHead {
   margin-left: 5%;
@@ -844,6 +874,7 @@ a:hover {
   color: beige;
 }
 .section5 .section5Cont .section5R .owl-nav button {
+  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -868,6 +899,7 @@ a:hover {
   position: relative;
 }
 .section5 .section5Cont .section5R .sectionRCardCont .section5RCard .sec5RCardProfile {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0px 0px 0px 40px;
@@ -1004,6 +1036,7 @@ a:hover {
 }
 .footer .footerContainer .footerM .footerMMAil form {
   background-color: #361f61;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -1012,6 +1045,10 @@ a:hover {
   border: none;
 }
 .footer .footerContainer .footerM .footerMMAil form input::-moz-placeholder {
+  color: white;
+  padding: 0px 10px;
+}
+.footer .footerContainer .footerM .footerMMAil form input:-ms-input-placeholder {
   color: white;
   padding: 0px 10px;
 }
@@ -1092,6 +1129,7 @@ a:hover {
   color: rgb(202, 202, 202);
 }
 .sideMenu .closeButton {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0px 0px 0px auto;
@@ -1199,4 +1237,18 @@ a:hover {
     position: relative;
     left: 96px;
   }
+}
+.owl-nav .owl-prev, .owl-nav .owl-next {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50% !important;
+  background-image: linear-gradient(120deg, #fecc5f 0%, #7900b5 100%) !important;
+}
+.owl-nav .owl-prev span, .owl-nav .owl-next span {
+  font-size: 39px;
+  position: relative;
+  top: -5px;
 }/*# sourceMappingURL=skeleton.css.map */

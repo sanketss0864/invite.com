@@ -8,10 +8,10 @@ $(document).ready(function(){
     })
     $('#owl-carousel1').owlCarousel({
         loop:true,
-        nav:false,
-        items:3,
+        nav:true,
+        items:2,
         margin:5,
-        dots:true,
+        dots:false,
     })
     $('#owl-carousel3').owlCarousel({
       loop:true,
