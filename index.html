@@ -52,7 +52,7 @@
     <script src="index.js"></script>
   </head>
   <body>
-    <div class="backdrop"></div>
+    <div class="backdrop" onclick="menuToggle()"></div>
     <div class="sideMenu">
       <div class="closeButton">
         <img src="images/cancel.png" class="closeIcon" onclick="menuToggle()" />
@@ -66,7 +66,7 @@
         <div class="menuList">
           <div class="menuItem">
             <div class="dropdown">
-              <div class="dropbtn">Services</div>
+              <div class="dropbtn">Services<i class="fa-solid fa-chevron-down"></i></div>
               <div class="dropdown-content">
                 <a href="#">UI/UX</a>
                 <a href="#">Designing</a>
@@ -90,7 +90,7 @@
         </div>
       </div>
     </div>
-    <div class="navbar">
+    <div id="nav" class="navbar">
       <div class="navbarCont">
         <div class="navbarLinks">
           <div class="navbarLogo"><img src="images/logo.png" alt="" /></div>
@@ -154,10 +154,10 @@
         </div>
         <div class="section1R"><img src="images/img_041.png" alt="" /></div>
         <div class="socials">
-          <div class="social">FB</div>
-          <div class="social">TW</div>
-          <div class="social">BE</div>
-          <div class="social">YT</div>
+          <div class="social"><a href="">FB</a></div>
+          <div class="social"><a href="">TW</a></div>
+          <div class="social"><a href="">BE</a></div>
+          <div class="social"><a href="">YT</a></div>
         </div>
       </div>
     </div>
@@ -167,7 +167,7 @@
         <div class="section2L"><img src="images/aobut_img2.png" alt="" /></div>
         <div class="section2M">
           <div class="section2topHead">
-            <img src="images/sh_icon2.webp" alt="" />Best IT Company in UK!
+            <img src="images/sh_icon2.png" alt="" />Best IT Company in UK!
           </div>
           <div class="section2Head">
             We are Invite <span>IT Solutions</span>
@@ -206,7 +206,7 @@
     <div class="sectionService">
       <div class="serviceCont">
         <div class="servicesTopHead">
-          <img src="images/sh_icon2.webp" alt="" />Best IT Company in UK!
+          <img src="images/sh_icon2.png" alt="" />Best IT Company in UK!
         </div>
         <div class="servicesHead">Some of <span>Services</span></div>
         <div id="owl-carousel1" class="servicesCardCont owl-carousel owl-theme">
@@ -253,32 +253,86 @@
       </div>
     </div>
     <div class="section4">
-      <div class="section4Cont">
+      <div   class="section4Cont ">
         <div class="section4TopHead">
-          <img src="images/sh_icon2.webp" alt="" />Best IT Company in UK!
+          <img src="images/sh_icon2.png" alt="" />Best IT Company in UK!
         </div>
         <div class="section4Head">We have <span>work </span>sample</div>
-        <div class="section4CardCont">
-          <div class="section4CardLeft">
-            <img src="images/img_02-1.webp" alt="" />
-          </div>
-          <div class="section4CardM">
-            <img src="images/img_03.webp" alt="" />
-          </div>
-          <div class="section4CardRight">
-            <div class="section4CardRightInt">
-              <div class="section4CardRightHead">
-                Disaster Recovery&<br />Backup of Deployment
+        <div id="owl-carousel3" class="section4cards owl-carousel owl-theme">
+          <div class="section4CardCont item">
+            <div class="section4CardLeft">
+              <img src="images/img_02-1.webp" alt="" />
+            </div>
+            <div class="section4CardM">
+              <img src="images/img_03.webp" alt="" />
+            </div>
+            <div class="section4CardRight">
+              <div class="section4CardRightInt">
+                <div class="section4CardRightHead">
+                  Disaster Recovery&<br />Backup of Deployment
+                </div>
+                <div class="section4CardRightPara">
+                  Connectivity performance is key to business operations. We offer
+                  a range of Broadband, Leased Line & other connectivity.
+                </div>
+                <div class="section4CardBottom">
+                  <div class="section4CardNo">01/<span>01</span></div>
+                  <div class="section4CardArrow">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </div>
               </div>
-              <div class="section4CardRightPara">
-                Connectivity performance is key to business operations. We offer
-                a range of Broadband, Leased Line & other connectivity.
+            </div>
+          </div>
+          <div class="section4CardCont item">
+            <div class="section4CardLeft">
+              <img src="images/img_02-1.webp" alt="" />
+            </div>
+            <div class="section4CardM">
+              <img src="images/img_03.webp" alt="" />
+            </div>
+            <div class="section4CardRight">
+              <div class="section4CardRightInt">
+                <div class="section4CardRightHead">
+                  Disaster Recovery&<br />Backup of Deployment
+                </div>
+                <div class="section4CardRightPara">
+                  Connectivity performance is key to business operations. We offer
+                  a range of Broadband, Leased Line & other connectivity.
+                </div>
+                <div class="section4CardBottom">
+                  <div class="section4CardNo">02/<span>01</span></div>
+                  <div class="section4CardArrow">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </div>
               </div>
-              <div class="section4CardBottom">
-                <div class="section4CardNo">01/<span>01</span></div>
-                <div class="section4CardArrow">
-                  <i class="fa-solid fa-arrow-left"></i>
-                  <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="section4CardCont item">
+            <div class="section4CardLeft">
+              <img src="images/img_02-1.webp" alt="" />
+            </div>
+            <div class="section4CardM">
+              <img src="images/img_03.webp" alt="" />
+            </div>
+            <div class="section4CardRight">
+              <div class="section4CardRightInt">
+                <div class="section4CardRightHead">
+                  Disaster Recovery&<br />Backup of Deployment
+                </div>
+                <div class="section4CardRightPara">
+                  Connectivity performance is key to business operations. We offer
+                  a range of Broadband, Leased Line & other connectivity.
+                </div>
+                <div class="section4CardBottom">
+                  <div class="section4CardNo">03/<span>01</span></div>
+                  <div class="section4CardArrow">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
                 </div>
               </div>
             </div>
@@ -317,7 +371,7 @@
         </div>
         <div class="featuresR">
           <div class="featuresRTopHead">
-            <img src="images/sh_icon2.webp" alt="" />Why choose Invite?
+            <img src="images/sh_icon2.png" alt="" />Why choose Invite?
           </div>
           <div class="featuresRHead">
             We want to <span>work</span> the best!
@@ -340,7 +394,7 @@
       <div class="section5Cont">
         <div class="section5L">
           <div class="section5TopHead">
-            <img src="images/sh_icon2.webp" alt="" /> Testimonials
+            <img src="images/sh_icon2.png" alt="" /> Testimonials
           </div>
           <div class="section5Head">We want to <span>work</span> the best!</div>
           <div class="section5Para">
@@ -452,7 +506,7 @@
       <div class="footerContainer">
         <div class="footerL">
           <div class="footerLHead">
-            <a href=""><img src="images/sh_icon2.webp" alt="" />Invite</a>
+            <a href=""><img src="images/sh_icon2.png" alt="" />Invite</a>
           </div>
           <div class="footerLPara">
             We work with a passion of taking challenges and creating new ones in
@@ -510,5 +564,6 @@
         </div>
       </div>
     </div>
+    <div class="topButton"><a href="#nav"><i class="fa-solid fa-chevron-up"></i></a></div>
   </body>
 </html>

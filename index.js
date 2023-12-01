@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('#owl-carousel2').owlCarousel({
         loop:true,
         margin:10,
-        nav:false,
+        nav:true,
         center: true,
         items:1,
     })
@@ -13,6 +13,15 @@ $(document).ready(function(){
         margin:5,
         dots:true,
     })
+    $('#owl-carousel3').owlCarousel({
+      loop:true,
+      nav:true,
+      items:1,
+      margin:5,
+      dots:false,
+  //       mouseDrag: false,
+  // touchDrag: false,
+  })
   });
   
   function menuToggle(){
@@ -21,3 +30,4 @@ $(document).ready(function(){
     side.classList.toggle("active")
     back.classList.toggle("active")
   }
+ 

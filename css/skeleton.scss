@@ -1,5 +1,9 @@
-.body {
+html{
+  scroll-behavior: smooth
+}
+body {
   font-family: Roboto, sans-serif;
+  
 }
 
 ::-webkit-scrollbar {
@@ -100,7 +104,10 @@ a:hover {
       display: flex;
       .navbarLogo {
         width: 30%;
-        margin-right: 40px;
+        margin:auto 40px auto 0px;
+        img{
+          height: 37px;
+        }
       }
       .navbarlink {
         display: flex;
@@ -287,6 +294,16 @@ a:hover {
         text-orientation: mixed;
         transform: rotate(180deg);
         padding: 20px;
+        a{
+          color: white;
+          font-weight: 700;
+          font-size: 26px;
+          letter-spacing: 4px;
+          
+        }
+        a:hover {
+          color: #f90058;
+      }
       }
     }
   }
@@ -325,6 +342,7 @@ a:hover {
 
         img {
           padding: 5px;
+          height: 60px;
         }
       }
       .section2Head {
@@ -431,6 +449,7 @@ a:hover {
       font-size: 20px;
       img {
         padding: 5px 10px;
+        height: 60px;
       }
     }
 
@@ -563,6 +582,7 @@ a:hover {
       font-size: 20px;
       img {
         padding: 5px 10px;
+        height: 60px;
       }
     }
     .section4Head {
@@ -577,6 +597,24 @@ a:hover {
         color: #bfef2d;
       }
     }
+    .owl-nav {
+      font-size: 82px;
+      text-align: center;
+      -webkit-tap-highlight-color: transparent;
+      color: beige;
+      position: absolute;
+      bottom: 0;
+      right: 215px;
+      button{
+        span{
+          height: 30px; 
+        }
+      }
+      button:hover{
+        background:none;
+      }
+
+  }
     .section4CardCont {
       display: flex;
 
@@ -623,6 +661,7 @@ a:hover {
           }
 
           .section4CardArrow {
+            display: none;
             padding: 0px 10px;
             margin: auto 0px;
             i {
@@ -726,6 +765,7 @@ a:hover {
         font-weight: 500;
         img {
           padding: 5px;
+          height: 60px;
         }
       }
       .featuresRHead {
@@ -808,6 +848,7 @@ a:hover {
         font-size: 20px;
         img {
           padding: 5px 10px;
+          height: 60px;
         }
       }
       .section5Head {
@@ -853,6 +894,22 @@ a:hover {
     .section5R {
       display: flex;
       width: 50%;
+      .owl-nav {
+        font-size: 30px;
+        text-align: center;
+        color: beige;
+        button{
+          height: fit-content;
+          span{
+            display: block;
+            height: auto;
+            padding: 0px 8px;
+          }
+        }
+        button:hover{
+          background: none;
+        }
+    }
       .sectionRCardCont {
         width: 80%;
 
@@ -980,6 +1037,7 @@ a:hover {
         margin: 20px 0px;
         img {
           padding: 0px 15px 0px 0px;
+          height: 60px;
         }
         a {
           color: white;
@@ -1094,7 +1152,7 @@ a:hover {
   top: 0;
   bottom: 0;
   background-color: #00000a5f;
-  z-index: 10;
+  z-index: 8;
 }
 .sideMenu {
   top: 0;
@@ -1107,18 +1165,20 @@ a:hover {
   width: 50%;
   color: rgb(202, 202, 202);
   .closeButton {
-    font-size: 30px;
-    font-weight: 700;
     width: fit-content;
     margin: 0px 0px 0px auto;
     .closeIcon {
-      padding: 4px 20px;
-      height: 30px;
+      padding: 10px;
+      /* margin: 10px; */
+      height: 43px;
     }
   }
   .sideMenuCont {
     margin: 24px 116px;
     .webLogo {
+      img{
+        height: 47px;
+      }
     }
     .logoPara {
       margin: 25px 0px;
@@ -1133,17 +1193,20 @@ a:hover {
           display: inline-block;
          
           .dropbtn {
-            
+            i{
+              scale: 0.6;
+            }
           }
           .dropdown-content {
             font-size: 20px;
             display: none;
-            position: absolute;
-            background-color: #0a183f;
-            min-width: 160px;
-            left: 160px;
-            top: 10px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            position: relative;
+            width: 203px;
+            /* background-color: rgb(10, 24, 63); */
+            /* min-width: 160px; */
+            /* left: 120px; */
+            /* top: 10px; */
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px 0px;
             z-index: 1;
             a {
               color: white;
@@ -1195,7 +1258,28 @@ a:hover {
     }
   }
 }
+.topButton{
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  i{padding: 12px;
+    color: white;
+  border: solid greenyellow;
+border-radius: 50%;}
+  z-index: 3;
+}
 
 .active {
   display: block;
+}
+
+@media (min-width: 426px) and (max-width:768px){
+  .navbar .navbarCont .navbarLinks .navbarlink {
+  display: none;
+}
+.section1 .section1Cont .section1R img {
+  width: 95%;
+  position: relative;
+  left: 96px;
+}
 }
