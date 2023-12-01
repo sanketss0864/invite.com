@@ -322,7 +322,7 @@ a:hover {
   padding: 4rem 0;
   background-color: #f8f8f8;
   overflow: clip;
-  background-image: url(../images/a_shape3.png);
+  // background-image: url(../images/a_shape3.png);
   background-repeat: no-repeat;
   background-position: 0% 106%;
   .section2Top {
@@ -476,7 +476,8 @@ a:hover {
       font-weight: 700;
       line-height: 68px;
       text-align: center;
-      margin: 2rem 0 3rem 0;
+      margin: 15rem 0 3rem 0;
+  }
       span {
         color: #bfef2d;
       }
@@ -1289,8 +1290,50 @@ border-radius: 50%;}
 .active {
   display: block;
 }
+.innovationCard{
+  height: 0%;
+  .innovationCardCont{
+    width: 80%;
+    margin: auto;
+    padding: 98px 69px 85px;
+    position: relative;
+    top: 140px;
+    border: solid black;
+    background-color: white;
+    box-shadow: 10px 10px 0px #43ffdc; 
+    .innovationCardText{
+      font-size: 32px;
+    font-family: sans-serif;
+    font-weight: 600;
+      span{
+        background-color: yellow;
+      }
+    }
+    .innovationButton{
+      text-align: center;
+      margin: 45px 0px 20px;
+      a{
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        background-color: orangered;
+        padding: 17px;
+        width: -moz-fit-content;
+        width: fit-content;
+        border-radius: 23px;
+        margin: 20px;
+      }
+      a:hover{
+        color: white;
+        background-color: black;
+      }
+    }
+  }
+}
 
-@media (min-width: 426px) and (max-width:768px){
+
+
+@media (max-width:768px){
   .navbar .navbarCont .navbarLinks .navbarlink {
   display: none;
 }
@@ -1299,6 +1342,145 @@ border-radius: 50%;}
   position: relative;
   left: 96px;
 }
+.section2 .section2Cont .section2L {
+  margin: 44px auto;
+}
+.section2 .section2Cont{
+  flex-wrap: wrap;
+  margin: 0;
+  border-top-left-radius: 40px;
+  border-top-right-radius:40px ;
+}
+.section2 .section2Top img {
+display: none;
+}
+.section2Top{
+  height: 40px;
+}
+.section2 .section2Cont .section2M {
+  width: 100%;
+  margin: 0px 3%;
+}
+.section2 .section2Cont .section2R .sect2bgImg {
+ display: none;
+
+}
+.section2 .section2Cont .section2R {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.section2 .section2Cont .section2R .section2RCard {
+  right: 0;
+}
+.sectionService .serviceCont .servicesHead {
+  width: 80%;
+
+}
+.section4 .section4Cont .section4Head {
+  width: 82%;
+  margin: 33px 27px;
+}
+.section4 .section4Cont .section4CardCont .section4CardLeft {
+  width: 0;
+}
+.section4 .section4Cont .section4CardCont { 
+  flex-wrap: wrap;
+}
+.section4 .section4Cont .section4CardCont .section4CardM {
+  width: 95%;
+  margin: auto;
+}
+.section4 .section4Cont .section4CardCont .section4CardRight .section4CardRightInt {
+  height: 100%;
+ margin: 0;
+  padding: 4%;
+  background-color: #0a183f;
+}
+.section4 .section4Cont .section4CardCont .section4CardRight {
+  width: 100%;
+}
+.section4 .section4Cont .section4CardCont .section4CardRight::before {
+  top: 48px;
+}
+.section4 .section4Cont .section4aboutCont:before {
+ display: none;
+}
+.section4 .section4Cont .section4aboutCont {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-left: 40px;
+}
+.section4 .section4Cont .section4aboutCont .sec4Card .sec4CardPara {
+  width: 88%;
+  font-size: 22px;
+  padding-bottom: 22px;
+}
+.section4 .section4Cont .section4aboutCont .sec4Card {
+  width: 80%;
+  margin: 21px auto;
+}
+.Sectionfeatures .featuresCont {
+  display: flex;
+  width: 96%;
+  flex-wrap: wrap;
+}
+.Sectionfeatures .featuresCont .featuresL {
+  justify-content: center;
+  width: 100%;
+}
+.featuresR{
+  margin: auto;
+  width: 97%;
+}
+.section5 .section5Cont {
+  flex-wrap: wrap;
+  width: 97%;
+  margin: 0px auto;
+  
+}
+.section5 .section5Cont .section5L {
+  margin: auto;
+  width: 95%;
+}
+.section5 .section5Cont .section5R {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 42px 0px;
+}
+.primaryButton {
+  height: fit-content;
+}
+.footer .footerContainer {
+  flex-wrap: wrap;
+}
+.footer .footerContainer .footerL {
+  width: 100%;
+}
+.footer .footerContainer .footerM {
+  width: 100%;
+}
+.footer .footerContainer .footerR {
+  width: 100%;
+}
+.sideMenu .sideMenuCont {
+  width: 90%;
+  overflow: auto;
+  margin: 24px auto;
+}
+.navbar .navbarCont .menuContainer .navContact {
+  display: none
+}
+}
+@media(max-width:427px){
+
+  .navbar .navbarCont .navbarLinks .navbarLogo img {
+    height: 4vh;
+}
+
 }
 .owl-nav{
   .owl-prev,.owl-next {
