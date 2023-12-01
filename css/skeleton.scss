@@ -3,7 +3,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Livvic", sans-serif;
+  font-family: 'Livvic', sans-serif;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -97,39 +98,67 @@ a:hover {
   border-radius: 20px;
   font-weight: 600;
   font-size: 18px;
-  background-image: linear-gradient(120deg, #fecc5f 0%, #7900b5 100%);
-  height: 56px;
+  height: 65px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
 }
 .owl-carousel .owl-item img {
   display: block;
   width: auto;
 }
 .navbar {
-  // background-color: #00071a;
-  margin-top: 20px;
   color: white;
-  position: absolute;
+  position: fixed;
   width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  background-color: #00071a;
+  z-index: 999;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   .navbarCont {
     display: flex;
-    width: 90%;
+    width: 100%;
     margin: auto;
     justify-content: space-between;
     .navbarLinks {
       display: flex;
+      width: 80%;
       .navbarLogo {
-        width: 30%;
-        margin: auto 40px auto 0px;
-        img {
-          height: 37px;
+        width: 25%;
+        margin: 1rem 0;
+        img{
+         width: 100%;
+        }
+      }
+      #menus_link{
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul{
+          padding: 0;
+          margin: 0;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          li{
+            display: flex;
+            margin: 0 10px;
+            a{
+              color: #fff;
+              font-size: 15px;
+              font-weight: 700;
+              opacity: .8;
+            }
+          }
         }
       }
       .navbarlink {
         display: flex;
-        padding: 0px 20px;
+        padding: 0px 10px;
         margin: auto;
         .dropdown {
           position: relative;
@@ -140,7 +169,7 @@ a:hover {
           .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #0a183f;
+            background-color: #00071a;
             min-width: 160px;
             top: 60px;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -168,10 +197,11 @@ a:hover {
       }
     }
     .menuContainer {
+      width: 20%;
       display: flex;
       .navContact {
         display: flex;
-        margin: 0px 40px;
+        margin: 0;
         .phoneLogo {
           margin: auto;
           i {
@@ -330,7 +360,7 @@ a:hover {
 .section2 {
   padding: 4rem 0;
   background-color: #f8f8f8;
-  overflow: clip;
+  // overflow: clip;
   // background-image: url(../images/a_shape3.png);
   background-repeat: no-repeat;
   background-position: 0% 106%;
@@ -344,9 +374,10 @@ a:hover {
     margin: 0px 0px 0px 7%;
     display: flex;
     color: white;
-    background: url(../images/a_shape3.png), #0a183f;
+    background: url(../images/a_shape3.png) ,#00071a;
     background-position: 0% 131%;
     background-repeat: no-repeat;
+    position: relative;
     .section2L {
       margin: 50px;
       img {
@@ -440,14 +471,15 @@ a:hover {
             .section2CardPointer {
               position: relative;
               font-size: 17px;
-              top: -165px;
-              left: 159px;
+              bottom: -165px;
+              left: 131px;
               width: fit-content;
               border-radius: 50%;
               padding: 20px 26px;
-              background-color: #bfef2d;
               transform: rotate(-40deg);
-              color: black;
+              color: #fff;
+              z-index: 1111;
+              background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
               i {
               }
             }
@@ -456,8 +488,12 @@ a:hover {
       }
       .sect2bgImg {
         top: 0;
-        left: -67px;
-        position: absolute;
+        left: 0;
+        position: relative;
+        overflow: hidden;
+        img{
+          width: 100%;
+        }
       }
     }
   }
@@ -466,7 +502,12 @@ a:hover {
   position: relative;
   color: white;
   overflow: hidden;
+  background: url(../images/slider_shape_33.png);
+  background-position: 100px 0px;
+  background-repeat: no-repeat;
   .serviceCont {
+    padding-top: 4rem;
+    background-image: url('../images/slider_line_shape.png');
     .servicesTopHead {
       margin-left: 5%;
       color: white;
@@ -485,35 +526,88 @@ a:hover {
       font-weight: 700;
       line-height: 68px;
       text-align: center;
-      margin: 15rem 0 3rem 0;
-    }
-    span {
-      color: #bfef2d;
-    }
+      margin: 4rem 0 3rem 0;
   }
-  .servicesCardCont {
-    width: 97%;
-    // display: flex;
-    padding-bottom: 50px;
-    margin: auto;
-    .servicesCard {
-      width: 98%;
-      background: #ffffff1f;
-      padding: 30px;
-      border-radius: 10px;
-      .servicesCardIcon {
+      span {
+        color: #bfef2d;
+      }
+    }
+    .servicesCardCont {
+      width: 97%;
+      // display: flex;
+      padding-bottom: 50px;
+      margin: auto;
+      .servicesCard {
+        width: 98%;
+        background: rgb(255 255 255 / 95%);
+        padding: 30px;
+        border-radius: 10px;
+        z-index: 111111;
         position: relative;
-        display: flex;
-        justify-content: center;
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        margin: 1rem auto;
-        background: #fff;
-        align-items: center;
-        img {
-          width: 90px;
+        display: block;
+    
+        .servicesCardIcon {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          margin: 1rem auto;
+          background: #fff;
+          align-items: center;
+          img {
+            width: 90px;
+          }
         }
+        
+        .servicesCardHead {
+          text-align: center;
+          font-size: 30px;
+          font-weight: 700;
+          margin-bottom: 10px;
+          line-height: 40px;
+          min-height: auto;
+          color: #000;
+        }
+        .servicesCardPara {
+          text-align: center;
+          color: #2c3145;
+          margin: auto;
+          width: 100%;
+          font-size: 17px;
+          line-height: 30px;
+          font-weight: 600;
+        }
+        .primaryButton {
+          margin: 26px auto 0px;
+          position: relative;
+          width: 200px;
+          justify-content: center;
+          align-items: center;
+        }
+        // .primaryButton::before {
+        //   position: absolute;
+        //   content: "";
+        //   top: -49px;
+        //   left: -67px;
+        //   width: 286px;
+        //   height: 163px;
+        //   border-radius: 50%;
+        //   background-color: rgb(0, 7, 26);
+        //   z-index: -1;
+        // }
+        // .primaryButton::after {
+        //   position: absolute;
+        //   content: "";
+        //   top: -42px;
+        //   left: -66px;
+        //   width: 284px;
+        //   height: 162px;
+        //   border-radius: 50%;
+        //   background: linear-gradient(90deg, #f90058 0%, #3e1cf3 100%);
+        //   z-index: -2;
+        // }
       }
 
       .servicesCardHead {
@@ -568,8 +662,6 @@ a:hover {
       }
     }
   }
-}
-
 .sectionService::before {
   display: block;
   content: "";
@@ -664,7 +756,7 @@ a:hover {
           height: 78%;
           margin: 12% 0 0 0;
           padding: 4%;
-          background-color: #0a183f;
+          background-color: #00071a;
           .section4CardRightHead {
             font-weight: 600;
             color: white;
@@ -937,12 +1029,12 @@ a:hover {
         }
       }
       .sectionRCardCont {
-        width: 80%;
+        width: 100%;
 
         .section5RCard {
           width: 92%;
           padding: 45px;
-          background: #0a183f;
+          background: #00071a;
           border-top-right-radius: 117px;
           border-bottom-left-radius: 117px;
           margin: auto;
@@ -962,8 +1054,8 @@ a:hover {
             padding-bottom: 15px;
             word-spacing: 1px;
             line-height: 26px;
-            width: 75%;
-            border-bottom: solid 1px #b8b8b859;
+            width: 86%;
+            border-bottom: solid 1px rgba(184, 184, 184, 0.3490196078);
           }
           .review {
             margin: 0px 0px 0px 45px;
@@ -1053,7 +1145,7 @@ a:hover {
   color: white;
   .footerContainer {
     display: flex;
-    width: 70%;
+    width: 95%;
     margin: auto;
     padding: 50px 0px;
     justify-content: space-between;
@@ -1072,9 +1164,11 @@ a:hover {
         }
       }
       .footerLPara {
-        font-size: 16px;
+        font-size: 17px;
         color: gainsboro;
         margin: 10px 0px;
+        font-weight: 800;
+        line-height: 30px;
       }
       .primaryButton {
         margin: 30px 0px;
@@ -1084,6 +1178,11 @@ a:hover {
       }
     }
     .footerM {
+      form{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
       width: 25%;
       .footerMHead {
         font-size: 32px;
@@ -1100,9 +1199,17 @@ a:hover {
         form {
           background-color: #361f61;
           width: fit-content;
+          width: 100%;
           input {
             background: none;
             border: none;
+            width: 100%;
+            padding: 10px;
+            color: #fff;
+            letter-spacing: 1px;
+            &:focus{
+              outline: none !important;
+            }
           }
           input::placeholder {
             color: white;
@@ -1118,7 +1225,15 @@ a:hover {
       .footerSocials {
         display: flex;
         .footerSocial {
-          padding: 0px 30px 0px 0px;
+          // padding: 0px 30px 0px 0px;
+          background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+          width: 50px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          margin-right: 10px;
           a {
             font-size: 21px;
             color: gainsboro;
@@ -1130,7 +1245,7 @@ a:hover {
       }
     }
     .footerR {
-      width: 25%;
+      width: 32%;
       .footerRHead {
         font-size: 32px;
         font-weight: 600;
@@ -1305,13 +1420,14 @@ a:hover {
   .innovationCardCont {
     width: 80%;
     margin: auto;
-    padding: 98px 69px 85px;
+    padding: 3rem;
     position: relative;
-    top: 140px;
+    top: 75px;
     border: solid black;
     background-color: white;
-    box-shadow: 10px 10px 0px #43ffdc;
-    .innovationCardText {
+    box-shadow: 10px 10px 0px #671bcc; 
+    z-index: 1;
+    .innovationCardText{
       font-size: 32px;
       font-family: sans-serif;
       font-weight: 600;
@@ -1321,17 +1437,12 @@ a:hover {
     }
     .innovationButton {
       text-align: center;
-      margin: 45px 0px 20px;
-      a {
-        font-size: 16px;
-        font-weight: 600;
-        color: white;
-        background-color: orangered;
-        padding: 17px;
-        width: -moz-fit-content;
-        width: fit-content;
-        border-radius: 23px;
-        margin: 20px;
+      margin: 30px 0px 0 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a{
+        margin: 0;
       }
       a:hover {
         color: white;
@@ -1647,16 +1758,63 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50% !important;
-    background-image: linear-gradient(
-      120deg,
-      #fecc5f 0%,
-      #7900b5 100%
-    ) !important;
-    span {
+     border-radius: 50% !important;
+     background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%) !important;
+    span{
       font-size: 39px;
       position: relative;
       top: -5px;
+    }
+  }
+  
+}
+#menus_link{
+  ul{
+    li{
+      position: relative;
+      .services_grid{
+        position: absolute;
+        width: 800px;
+        top: 0;
+        left: 0;
+        padding-top: 46px;
+        z-index: -1;
+        #service_inner_mega_menu{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: flex-start;
+          background: #fff;
+          padding: 2rem;
+          border-radius: 10px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          .service_listings{
+            width: 48%;
+            border-bottom: 1px solid #ccc;
+            a{
+              font-size: 13px;
+              font-weight: 600;
+              color: #050c1f;
+              width: 100%;
+              display: flex;
+              height: 44px;
+              justify-content: flex-start;
+              align-items: center;
+              transition: all .4s;
+              img{
+                width: 40px;
+    margin-right: 10px;
+              }
+              &:hover{
+                background: #f8f8f8;
+                padding-left: 10px;
+                border-left: 9px solid #6a11cb;
+              }
+            }
+          }
+        }
+      
+      }
     }
   }
 }
