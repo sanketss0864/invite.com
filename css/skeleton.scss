@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
-html{
-  scroll-behavior: smooth
+@import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+html {
+  scroll-behavior: smooth;
 }
 body {
-  font-family: 'Livvic', sans-serif;
+  font-family: "Livvic", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -25,7 +25,17 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-p,a,h1,h2,h3,h4,h5,h6,span,li,div {
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+li,
+div {
   letter-spacing: 2px;
 }
 a:hover {
@@ -112,8 +122,8 @@ a:hover {
       display: flex;
       .navbarLogo {
         width: 30%;
-        margin:auto 40px auto 0px;
-        img{
+        margin: auto 40px auto 0px;
+        img {
           height: 37px;
         }
       }
@@ -304,16 +314,15 @@ a:hover {
         text-orientation: mixed;
         transform: rotate(180deg);
         padding: 20px;
-        a{
+        a {
           color: white;
           font-weight: 700;
           font-size: 26px;
           letter-spacing: 4px;
-          
         }
         a:hover {
           color: #f90058;
-      }
+        }
       }
     }
   }
@@ -477,89 +486,89 @@ a:hover {
       line-height: 68px;
       text-align: center;
       margin: 15rem 0 3rem 0;
-  }
-      span {
-        color: #bfef2d;
-      }
     }
-    .servicesCardCont {
-      width: 97%;
-      // display: flex;
-      padding-bottom: 50px;
-      margin: auto;
-      .servicesCard {
-        width: 98%;
-        background: #ffffff1f;
-        padding: 30px;
-        border-radius: 10px;
-        .servicesCardIcon {
-          position: relative;
-          display: flex;
-          justify-content: center;
-          width: 150px;
-          height: 150px;
-          border-radius: 50%;
-          margin: 1rem auto;
-          background: #fff;
-          align-items: center;
-          img {
-            width: 90px;
-          }
-        }
-        
-        .servicesCardHead {
-          text-align: center;
-          font-size: 30px;
-          font-weight: 700;
-          margin-bottom: 10px;
-          line-height: 40px;
-          min-height: 60px;
-        }
-        .servicesCardPara {
-          text-align: center;
-          color: gainsboro;
-          margin: auto;
-          width: 100%;
-          font-size: 15px;
-          line-height: 25px;
-        }
-        .primaryButton {
-          margin: 26px auto 0px;
-          position: relative;
-          width: 200px;
-          justify-content: center;
-          align-items: center;
-        }
-        // .primaryButton::before {
-        //   position: absolute;
-        //   content: "";
-        //   top: -49px;
-        //   left: -67px;
-        //   width: 286px;
-        //   height: 163px;
-        //   border-radius: 50%;
-        //   background-color: rgb(0, 7, 26);
-        //   z-index: -1;
-        // }
-        // .primaryButton::after {
-        //   position: absolute;
-        //   content: "";
-        //   top: -42px;
-        //   left: -66px;
-        //   width: 284px;
-        //   height: 162px;
-        //   border-radius: 50%;
-        //   background: linear-gradient(90deg, #f90058 0%, #3e1cf3 100%);
-        //   z-index: -2;
-        // }
-      }
-      .servicesCard:hover {
-        .servicesCardIcon::before {
-          opacity: 1;
-        }
-      }
+    span {
+      color: #bfef2d;
     }
   }
+  .servicesCardCont {
+    width: 97%;
+    // display: flex;
+    padding-bottom: 50px;
+    margin: auto;
+    .servicesCard {
+      width: 98%;
+      background: #ffffff1f;
+      padding: 30px;
+      border-radius: 10px;
+      .servicesCardIcon {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 1rem auto;
+        background: #fff;
+        align-items: center;
+        img {
+          width: 90px;
+        }
+      }
+
+      .servicesCardHead {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        line-height: 40px;
+        min-height: 60px;
+      }
+      .servicesCardPara {
+        text-align: center;
+        color: gainsboro;
+        margin: auto;
+        width: 100%;
+        font-size: 15px;
+        line-height: 25px;
+      }
+      .primaryButton {
+        margin: 26px auto 0px;
+        position: relative;
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+      }
+      // .primaryButton::before {
+      //   position: absolute;
+      //   content: "";
+      //   top: -49px;
+      //   left: -67px;
+      //   width: 286px;
+      //   height: 163px;
+      //   border-radius: 50%;
+      //   background-color: rgb(0, 7, 26);
+      //   z-index: -1;
+      // }
+      // .primaryButton::after {
+      //   position: absolute;
+      //   content: "";
+      //   top: -42px;
+      //   left: -66px;
+      //   width: 284px;
+      //   height: 162px;
+      //   border-radius: 50%;
+      //   background: linear-gradient(90deg, #f90058 0%, #3e1cf3 100%);
+      //   z-index: -2;
+      // }
+    }
+    .servicesCard:hover {
+      .servicesCardIcon::before {
+        opacity: 1;
+      }
+    }
+  }
+}
 
 .sectionService::before {
   display: block;
@@ -623,16 +632,15 @@ a:hover {
       position: absolute;
       bottom: 0;
       right: 215px;
-      button{
-        span{
-          height: 30px; 
+      button {
+        span {
+          height: 30px;
         }
       }
-      button:hover{
-        background:none;
+      button:hover {
+        background: none;
       }
-
-  }
+    }
     .section4CardCont {
       display: flex;
 
@@ -916,18 +924,18 @@ a:hover {
         font-size: 30px;
         text-align: center;
         color: beige;
-        button{
+        button {
           height: fit-content;
-          span{
+          span {
             display: block;
             height: auto;
             padding: 0px 8px;
           }
         }
-        button:hover{
+        button:hover {
           background: none;
         }
-    }
+      }
       .sectionRCardCont {
         width: 80%;
 
@@ -1162,10 +1170,10 @@ a:hover {
     }
   }
 }
-.backdrop{
+.backdrop {
   display: none;
   position: fixed;
-  width: 100%;  
+  width: 100%;
   height: 100%;
   top: 0;
   bottom: 0;
@@ -1194,7 +1202,7 @@ a:hover {
   .sideMenuCont {
     margin: 24px 116px;
     .webLogo {
-      img{
+      img {
         height: 47px;
       }
     }
@@ -1209,9 +1217,9 @@ a:hover {
         .dropdown {
           position: relative;
           display: inline-block;
-         
+
           .dropbtn {
-            i{
+            i {
               scale: 0.6;
             }
           }
@@ -1248,51 +1256,53 @@ a:hover {
         }
       }
     }
-    .contactDetails{
+    .contactDetails {
       display: flex;
-      .contactPhone{
-        span{
+      .contactPhone {
+        span {
           color: white;
           font-size: 23px;
           margin: 0px 0px 0px 20px;
-          padding-right:20px ;
-          border-right:solid rgba(255, 255, 255, 0.422) 1px;
+          padding-right: 20px;
+          border-right: solid rgba(255, 255, 255, 0.422) 1px;
           font-weight: 600;
         }
       }
-      .contactMail{
+      .contactMail {
         padding-left: 20px;
         margin: auto 0px;
       }
     }
 
-    .contactSocials{
+    .contactSocials {
       display: flex;
-      padding: 20px 0PX;
-      .contactSocial{
-    font-size: 20px;
-    padding: 0px 30px 0px 0px;
+      padding: 20px 0px;
+      .contactSocial {
+        font-size: 20px;
+        padding: 0px 30px 0px 0px;
       }
     }
   }
 }
-.topButton{
+.topButton {
   position: fixed;
   bottom: 60px;
   right: 60px;
-  i{padding: 12px;
+  i {
+    padding: 12px;
     color: white;
-  border: solid greenyellow;
-border-radius: 50%;}
+    border: solid greenyellow;
+    border-radius: 50%;
+  }
   z-index: 3;
 }
 
 .active {
   display: block;
 }
-.innovationCard{
+.innovationCard {
   height: 0%;
-  .innovationCardCont{
+  .innovationCardCont {
     width: 80%;
     margin: auto;
     padding: 98px 69px 85px;
@@ -1300,19 +1310,19 @@ border-radius: 50%;}
     top: 140px;
     border: solid black;
     background-color: white;
-    box-shadow: 10px 10px 0px #43ffdc; 
-    .innovationCardText{
+    box-shadow: 10px 10px 0px #43ffdc;
+    .innovationCardText {
       font-size: 32px;
-    font-family: sans-serif;
-    font-weight: 600;
-      span{
+      font-family: sans-serif;
+      font-weight: 600;
+      span {
         background-color: yellow;
       }
     }
-    .innovationButton{
+    .innovationButton {
       text-align: center;
       margin: 45px 0px 20px;
-      a{
+      a {
         font-size: 16px;
         font-weight: 600;
         color: white;
@@ -1323,38 +1333,38 @@ border-radius: 50%;}
         border-radius: 23px;
         margin: 20px;
       }
-      a:hover{
+      a:hover {
         color: white;
         background-color: black;
       }
     }
   }
 }
-.ceoTalk{
+.ceoTalk {
   background-color: black;
-  .ceoTalkContent{
+  .ceoTalkContent {
     width: 80%;
     margin: auto;
     display: flex;
-    padding : 60px 0px;
-    .ceoTalkCard{
+    padding: 60px 0px;
+    .ceoTalkCard {
       position: relative;
       width: 60%;
       background: white;
       height: fit-content;
       margin: 50px 30px;
       padding: 40px;
-      .ceoCardText{
+      .ceoCardText {
         font-family: sans-serif;
         font-weight: 600;
         font-size: 21px;
       }
-      .CeoCardBottom{
+      .CeoCardBottom {
         display: flex;
         justify-content: space-between;
-        .ceoCardButton{
+        .ceoCardButton {
           margin: 45px 0px 30px;
-          a{
+          a {
             font-size: 16px;
             font-weight: 600;
             color: white;
@@ -1364,221 +1374,289 @@ border-radius: 50%;}
             border-radius: 23px;
             margin: 20px;
           }
-          a:hover{
+          a:hover {
             color: white;
             background-color: black;
           }
         }
-        .ceoSignature{
+        .ceoSignature {
           margin: auto 0px;
-          .ceoName{
-
+          .ceoName {
           }
-          .ceoSign{
-
+          .ceoSign {
           }
         }
       }
-      .svg{
+      .svg {
         height: 0;
-        .svg1{
+        .svg1 {
           height: 100%;
-    position: absolute;
-    top: -16px;
+          position: absolute;
+          top: -16px;
         }
-        .svg2{
+        .svg2 {
           height: 100%;
           position: absolute;
           left: -39px;
           bottom: -140px;
-        }  
+        }
       }
     }
-    .ceoImg{
+    .ceoImg {
       width: 0;
-      img{
+      img {
         width: 579px;
-    position: relative;
-    right: 135px;
-    top: 60px;
+        position: relative;
+        right: 135px;
+        top: 60px;
       }
     }
-
+  }
+}
+.aboutUs {
+  background-color: whitesmoke;
+  .aboutUsCont {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding: 60px 0px;
+    .aboutUsL {
+      .aboutUsHead {
+        font-size: 41px;
+        line-height: 47px;
+        font-weight: 700;
+        width: 65%;
+        margin: 0px 0 0px auto;
+        
+      }
+      .aboutUsImg {
+        img{
+          position: relative;
+          top: 137px;
+          right: 76px;
+        }
+      }
+    }
+    .aboutUSR {
+      width: fit-content;
+      margin: auto;
+      .aboutUsCards {
+        display: flex;
+        .aboutUsCard {
+         
+          border: solid rgb(255, 255, 255) 10px;
+          /* height: 17rem; */
+          margin: 40px 20px;
+          .aboutUsCardInner{
+            border: solid black;
+            /* margin-right: 30px; */
+            height: 24rem;
+            padding: 24px 41px;
+            background-color: white;
+           
+            .aboutUsSubHead {
+              font-weight: 600;
+              font-size: 21px;
+              margin: 5px 0px;
+              text-align: center;
+            }
+            .aboutUsMainHead {
+              font-weight: 800;
+              font-size: 71px;
+              text-align: center;
+              text-shadow: 4px 2px #00fffa4f;
+            }
+            i {
+              padding: 15px;
+              float: right;
+              font-size: 18px;
+              margin: 72px 8px 0px;
+              border-radius: 50%;
+              background: orange;
+              color: white;
+            }
+          }
+        }
+      }
+      .aboutUsLogos {
+        margin: 20px 0px;
+        display: flex;
+        .aboutUsLogo {
+          img {
+            height: 110px;
+          }
+        }
+      }
+    }
   }
 }
 
-
-
-
-
-
-
-
-
-
-@media (max-width:768px){
+@media (max-width: 768px) {
   .navbar .navbarCont .navbarLinks .navbarlink {
-  display: none;
+    display: none;
+  }
+  .section1 .section1Cont .section1R img {
+    width: 95%;
+    position: relative;
+    left: 96px;
+  }
+  .section2 .section2Cont .section2L {
+    margin: 44px auto;
+  }
+  .section2 .section2Cont {
+    flex-wrap: wrap;
+    margin: 0;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+  }
+  .section2 .section2Top img {
+    display: none;
+  }
+  .section2Top {
+    height: 40px;
+  }
+  .section2 .section2Cont .section2M {
+    width: 100%;
+    margin: 0px 3%;
+  }
+  .section2 .section2Cont .section2R .sect2bgImg {
+    display: none;
+  }
+  .section2 .section2Cont .section2R {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .section2 .section2Cont .section2R .section2RCard {
+    right: 0;
+  }
+  .sectionService .serviceCont .servicesHead {
+    width: 80%;
+  }
+  .section4 .section4Cont .section4Head {
+    width: 82%;
+    margin: 33px 27px;
+  }
+  .section4 .section4Cont .section4CardCont .section4CardLeft {
+    width: 0;
+  }
+  .section4 .section4Cont .section4CardCont {
+    flex-wrap: wrap;
+  }
+  .section4 .section4Cont .section4CardCont .section4CardM {
+    width: 95%;
+    margin: auto;
+  }
+  .section4
+    .section4Cont
+    .section4CardCont
+    .section4CardRight
+    .section4CardRightInt {
+    height: 100%;
+    margin: 0;
+    padding: 4%;
+    background-color: #0a183f;
+  }
+  .section4 .section4Cont .section4CardCont .section4CardRight {
+    width: 100%;
+  }
+  .section4 .section4Cont .section4CardCont .section4CardRight::before {
+    top: 48px;
+  }
+  .section4 .section4Cont .section4aboutCont:before {
+    display: none;
+  }
+  .section4 .section4Cont .section4aboutCont {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-left: 40px;
+  }
+  .section4 .section4Cont .section4aboutCont .sec4Card .sec4CardPara {
+    width: 88%;
+    font-size: 22px;
+    padding-bottom: 22px;
+  }
+  .section4 .section4Cont .section4aboutCont .sec4Card {
+    width: 80%;
+    margin: 21px auto;
+  }
+  .Sectionfeatures .featuresCont {
+    display: flex;
+    width: 96%;
+    flex-wrap: wrap;
+  }
+  .Sectionfeatures .featuresCont .featuresL {
+    justify-content: center;
+    width: 100%;
+  }
+  .featuresR {
+    margin: auto;
+    width: 97%;
+  }
+  .section5 .section5Cont {
+    flex-wrap: wrap;
+    width: 97%;
+    margin: 0px auto;
+  }
+  .section5 .section5Cont .section5L {
+    margin: auto;
+    width: 95%;
+  }
+  .section5 .section5Cont .section5R {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 42px 0px;
+  }
+  .primaryButton {
+    height: fit-content;
+  }
+  .footer .footerContainer {
+    flex-wrap: wrap;
+  }
+  .footer .footerContainer .footerL {
+    width: 100%;
+  }
+  .footer .footerContainer .footerM {
+    width: 100%;
+  }
+  .footer .footerContainer .footerR {
+    width: 100%;
+  }
+  .sideMenu .sideMenuCont {
+    width: 90%;
+    overflow: auto;
+    margin: 24px auto;
+  }
+  .navbar .navbarCont .menuContainer .navContact {
+    display: none;
+  }
 }
-.section1 .section1Cont .section1R img {
-  width: 95%;
-  position: relative;
-  left: 96px;
-}
-.section2 .section2Cont .section2L {
-  margin: 44px auto;
-}
-.section2 .section2Cont{
-  flex-wrap: wrap;
-  margin: 0;
-  border-top-left-radius: 40px;
-  border-top-right-radius:40px ;
-}
-.section2 .section2Top img {
-display: none;
-}
-.section2Top{
-  height: 40px;
-}
-.section2 .section2Cont .section2M {
-  width: 100%;
-  margin: 0px 3%;
-}
-.section2 .section2Cont .section2R .sect2bgImg {
- display: none;
-
-}
-.section2 .section2Cont .section2R {
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-.section2 .section2Cont .section2R .section2RCard {
-  right: 0;
-}
-.sectionService .serviceCont .servicesHead {
-  width: 80%;
-
-}
-.section4 .section4Cont .section4Head {
-  width: 82%;
-  margin: 33px 27px;
-}
-.section4 .section4Cont .section4CardCont .section4CardLeft {
-  width: 0;
-}
-.section4 .section4Cont .section4CardCont { 
-  flex-wrap: wrap;
-}
-.section4 .section4Cont .section4CardCont .section4CardM {
-  width: 95%;
-  margin: auto;
-}
-.section4 .section4Cont .section4CardCont .section4CardRight .section4CardRightInt {
-  height: 100%;
- margin: 0;
-  padding: 4%;
-  background-color: #0a183f;
-}
-.section4 .section4Cont .section4CardCont .section4CardRight {
-  width: 100%;
-}
-.section4 .section4Cont .section4CardCont .section4CardRight::before {
-  top: 48px;
-}
-.section4 .section4Cont .section4aboutCont:before {
- display: none;
-}
-.section4 .section4Cont .section4aboutCont {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding-left: 40px;
-}
-.section4 .section4Cont .section4aboutCont .sec4Card .sec4CardPara {
-  width: 88%;
-  font-size: 22px;
-  padding-bottom: 22px;
-}
-.section4 .section4Cont .section4aboutCont .sec4Card {
-  width: 80%;
-  margin: 21px auto;
-}
-.Sectionfeatures .featuresCont {
-  display: flex;
-  width: 96%;
-  flex-wrap: wrap;
-}
-.Sectionfeatures .featuresCont .featuresL {
-  justify-content: center;
-  width: 100%;
-}
-.featuresR{
-  margin: auto;
-  width: 97%;
-}
-.section5 .section5Cont {
-  flex-wrap: wrap;
-  width: 97%;
-  margin: 0px auto;
-  
-}
-.section5 .section5Cont .section5L {
-  margin: auto;
-  width: 95%;
-}
-.section5 .section5Cont .section5R {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin: 42px 0px;
-}
-.primaryButton {
-  height: fit-content;
-}
-.footer .footerContainer {
-  flex-wrap: wrap;
-}
-.footer .footerContainer .footerL {
-  width: 100%;
-}
-.footer .footerContainer .footerM {
-  width: 100%;
-}
-.footer .footerContainer .footerR {
-  width: 100%;
-}
-.sideMenu .sideMenuCont {
-  width: 90%;
-  overflow: auto;
-  margin: 24px auto;
-}
-.navbar .navbarCont .menuContainer .navContact {
-  display: none
-}
-}
-@media(max-width:427px){
-
+@media (max-width: 427px) {
   .navbar .navbarCont .navbarLinks .navbarLogo img {
     height: 4vh;
+  }
 }
-
-}
-.owl-nav{
-  .owl-prev,.owl-next {
+.owl-nav {
+  .owl-prev,
+  .owl-next {
     width: 60px;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-     border-radius: 50% !important;
-    background-image: linear-gradient(120deg, #fecc5f 0%, #7900b5 100%) !important;
-    span{
+    border-radius: 50% !important;
+    background-image: linear-gradient(
+      120deg,
+      #fecc5f 0%,
+      #7900b5 100%
+    ) !important;
+    span {
       font-size: 39px;
-    position: relative;
-    top: -5px;
+      position: relative;
+      top: -5px;
     }
   }
-  
 }
