@@ -1601,6 +1601,77 @@ a:hover {
     }
   }
 }
+.teamAbility{
+  .teamAbilityCont{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    margin-top: 88px;`
+    .teamAbilityL{
+      width: 50%;
+      .teamAbilityHead{
+        font-size: 38px;
+        font-weight: 700;
+        position: relative;
+        svg{
+          position: absolute;
+          left: -13px;
+    top: 0px;
+        }
+      }
+      .teamAbilityPara{
+        font-size: 18px;
+      }
+      .teamAbilityButton{
+        margin: 20px 0px;
+        a{
+          color: black;
+          background-color: #00ffdb;
+          padding: 8px 14px;
+          font-weight: 500;
+          border-radius: 31px;
+          width: fit-content;
+        }
+      }
+    }.teamAbilityR{
+      position: relative;
+      width: 0;
+      .teamAbilityImg{
+        img{
+          width: 650px;
+        }
+      }
+      .teamAbilityImgBg{
+      width: 0;
+      img{
+        position: absolute;
+        z-index: -1;
+        top: 0;
+      }
+      }
+    }
+  }
+  .teamAbilityBg{
+    position: relative;
+    .teamAbilityBgL{
+     svg{
+      position: absolute;
+      z-index: -1;
+      bottom: 0;
+     }
+    }
+    .teamAbilityBgR{
+     svg{
+      position: absolute;
+      z-index: -1;
+      right: 0px;
+      bottom: 0px;
+     }
+    }
+  }
+}
+
 
 @media (max-width: 768px) {
   .navbar .navbarCont .navbarLinks .navbarlink {

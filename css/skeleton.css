@@ -46,18 +46,6 @@ a:hover {
   text-decoration: none;
 }
 
-@-webkit-keyframes move {
-  0% {
-    transform: rotate(90deg) translate(4px, 0px);
-  }
-  50% {
-    transform: rotate(90deg) translate(-4px, 0px);
-  }
-  100% {
-    transform: rotate(90deg) translate(4px, 0px);
-  }
-}
-
 @keyframes move {
   0% {
     transform: rotate(90deg) translate(4px, 0px);
@@ -67,23 +55,6 @@ a:hover {
   }
   100% {
     transform: rotate(90deg) translate(4px, 0px);
-  }
-}
-@-webkit-keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(90deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  75% {
-    transform: rotate(270deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 @keyframes rotate {
@@ -300,7 +271,6 @@ a:hover {
 .section1 .section1Cont .section1M .section1Card {
   display: flex;
   background-color: #212738;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 0px 20px 0px 0px;
@@ -327,8 +297,7 @@ a:hover {
 }
 .section1 .section1Cont .section1M .subButton {
   color: white;
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   text-orientation: mixed;
   transform: rotate(180deg);
   padding: 10px;
@@ -339,8 +308,7 @@ a:hover {
 .section1 .section1Cont .section1M .subButton i {
   transform: rotate(90deg);
   padding: 5px;
-  -webkit-animation: move 2s linear infinite;
-          animation: move 2s linear infinite;
+  animation: move 2s linear infinite;
 }
 .section1 .section1Cont .section1R img {
   width: 95%;
@@ -350,8 +318,7 @@ a:hover {
   margin: 169px 0px;
 }
 .section1 .section1Cont .socials .social {
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   text-orientation: mixed;
   transform: rotate(180deg);
   padding: 20px;
@@ -428,7 +395,6 @@ a:hover {
 }
 .section2 .section2Cont .section2R .section2RCard {
   background-color: #00071a;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 10px;
@@ -450,19 +416,16 @@ a:hover {
   border-radius: 100px;
   padding: 49px 0px;
   height: -moz-fit-content;
-  height: -webkit-fit-content;
   height: fit-content;
 }
 .section2 .section2Cont .section2R .section2RCard .section2CardCont .cardInterior .crystalImg img {
   position: absolute;
   top: -113px;
-  -webkit-animation: rotate 14s 2s linear infinite;
-          animation: rotate 14s 2s linear infinite;
+  animation: rotate 14s 2s linear infinite;
 }
 .section2 .section2Cont .section2R .section2RCard .section2CardCont .cardInterior .section2CardHead {
   font-size: 55px;
   font-weight: 700;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
@@ -477,7 +440,6 @@ a:hover {
   font-size: 17px;
   bottom: -165px;
   left: 131px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 50%;
@@ -954,7 +916,6 @@ a:hover {
   color: beige;
 }
 .section5 .section5Cont .section5R .owl-nav button {
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -979,7 +940,6 @@ a:hover {
   position: relative;
 }
 .section5 .section5Cont .section5R .sectionRCardCont .section5RCard .sec5RCardProfile {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0px 0px 0px 40px;
@@ -1123,7 +1083,6 @@ a:hover {
 }
 .footer .footerContainer .footerM .footerMMAil form {
   background-color: #361f61;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   width: 100%;
@@ -1140,10 +1099,6 @@ a:hover {
   outline: none !important;
 }
 .footer .footerContainer .footerM .footerMMAil form input::-moz-placeholder {
-  color: white;
-  padding: 0px 10px;
-}
-.footer .footerContainer .footerM .footerMMAil form input:-ms-input-placeholder {
   color: white;
   padding: 0px 10px;
 }
@@ -1231,7 +1186,6 @@ a:hover {
   color: rgb(202, 202, 202);
 }
 .sideMenu .closeButton {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0px 0px 0px auto;
@@ -1380,7 +1334,6 @@ a:hover {
   position: relative;
   width: 60%;
   background: white;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin: 50px 30px;
@@ -1404,7 +1357,6 @@ a:hover {
   color: white;
   background-color: orangered;
   padding: 12px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 23px;
@@ -1463,7 +1415,6 @@ a:hover {
   right: 76px;
 }
 .aboutUs .aboutUsCont .aboutUSR {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
@@ -1510,6 +1461,71 @@ a:hover {
 }
 .aboutUs .aboutUsCont .aboutUSR .aboutUsLogos .aboutUsLogo img {
   height: 110px;
+}
+
+.teamAbility .teamAbilityCont {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  position: relative;
+  margin-top: 88px;
+}
+.teamAbility .teamAbilityCont .teamAbilityL {
+  width: 50%;
+}
+.teamAbility .teamAbilityCont .teamAbilityL .teamAbilityHead {
+  font-size: 38px;
+  font-weight: 700;
+  position: relative;
+}
+.teamAbility .teamAbilityCont .teamAbilityL .teamAbilityHead svg {
+  position: absolute;
+  left: -13px;
+  top: 0px;
+}
+.teamAbility .teamAbilityCont .teamAbilityL .teamAbilityPara {
+  font-size: 18px;
+}
+.teamAbility .teamAbilityCont .teamAbilityL .teamAbilityButton {
+  margin: 20px 0px;
+}
+.teamAbility .teamAbilityCont .teamAbilityL .teamAbilityButton a {
+  color: black;
+  background-color: #00ffdb;
+  padding: 8px 14px;
+  font-weight: 500;
+  border-radius: 31px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.teamAbility .teamAbilityCont .teamAbilityR {
+  position: relative;
+  width: 0;
+}
+.teamAbility .teamAbilityCont .teamAbilityR .teamAbilityImg img {
+  width: 650px;
+}
+.teamAbility .teamAbilityCont .teamAbilityR .teamAbilityImgBg {
+  width: 0;
+}
+.teamAbility .teamAbilityCont .teamAbilityR .teamAbilityImgBg img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+.teamAbility .teamAbilityBg {
+  position: relative;
+}
+.teamAbility .teamAbilityBg .teamAbilityBgL svg {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+}
+.teamAbility .teamAbilityBg .teamAbilityBgR svg {
+  position: absolute;
+  z-index: -1;
+  right: 0px;
+  bottom: 0px;
 }
 
 @media (max-width: 768px) {
@@ -1628,7 +1644,6 @@ a:hover {
     margin: 42px 0px;
   }
   .primaryButton {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
