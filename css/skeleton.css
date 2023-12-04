@@ -8,6 +8,13 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  transition: all 0.4s;
+}
+a:hover {
+  color: #fff !important;
+}
+
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -1351,21 +1358,6 @@ a:hover {
 .ceoTalk .ceoTalkContent .ceoTalkCard .CeoCardBottom .ceoCardButton {
   margin: 45px 0px 30px;
 }
-.ceoTalk .ceoTalkContent .ceoTalkCard .CeoCardBottom .ceoCardButton a {
-  font-size: 16px;
-  font-weight: 600;
-  color: white;
-  background-color: orangered;
-  padding: 12px;
-  width: -moz-fit-content;
-  width: fit-content;
-  border-radius: 23px;
-  margin: 20px;
-}
-.ceoTalk .ceoTalkContent .ceoTalkCard .CeoCardBottom .ceoCardButton a:hover {
-  color: white;
-  background-color: black;
-}
 .ceoTalk .ceoTalkContent .ceoTalkCard .CeoCardBottom .ceoSignature {
   margin: auto 0px;
 }
@@ -1693,13 +1685,17 @@ a:hover {
 #menus_link ul li {
   position: relative;
 }
+#menus_link ul li:hover .services_grid {
+  display: block;
+}
 #menus_link ul li .services_grid {
   position: absolute;
   width: 800px;
   top: 0;
   left: 0;
   padding-top: 46px;
-  z-index: -1;
+  z-index: 1;
+  display: none;
 }
 #menus_link ul li .services_grid #service_inner_mega_menu {
   display: flex;
@@ -1717,7 +1713,7 @@ a:hover {
 }
 #menus_link ul li .services_grid #service_inner_mega_menu .service_listings a {
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 700;
   color: #050c1f;
   width: 100%;
   display: flex;
@@ -1727,11 +1723,12 @@ a:hover {
   transition: all 0.4s;
 }
 #menus_link ul li .services_grid #service_inner_mega_menu .service_listings a img {
-  width: 40px;
+  width: 20px;
   margin-right: 10px;
 }
 #menus_link ul li .services_grid #service_inner_mega_menu .service_listings a:hover {
   background: #f8f8f8;
   padding-left: 10px;
-  border-left: 9px solid #6a11cb;
+  border-left: 3px solid #6a11cb;
+  color: #000 !important;
 }/*# sourceMappingURL=skeleton.css.map */

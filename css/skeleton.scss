@@ -3,8 +3,14 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Livvic', sans-serif;
+  font-family: "Livvic", sans-serif;
   overflow-x: hidden;
+}
+a{
+  transition: all .4s;
+  &:hover{
+    color: #fff !important;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -129,29 +135,29 @@ a:hover {
       .navbarLogo {
         width: 25%;
         margin: 1rem 0;
-        img{
-         width: 100%;
+        img {
+          width: 100%;
         }
       }
-      #menus_link{
+      #menus_link {
         width: 75%;
         display: flex;
         justify-content: center;
         align-items: center;
-        ul{
+        ul {
           padding: 0;
           margin: 0;
           display: flex;
           justify-content: flex-end;
           align-items: center;
-          li{
+          li {
             display: flex;
             margin: 0 10px;
-            a{
+            a {
               color: #fff;
               font-size: 15px;
               font-weight: 700;
-              opacity: .8;
+              opacity: 0.8;
             }
           }
         }
@@ -374,7 +380,7 @@ a:hover {
     margin: 0px 0px 0px 7%;
     display: flex;
     color: white;
-    background: url(../images/a_shape3.png) ,#00071a;
+    background: url(../images/a_shape3.png), #00071a;
     background-position: 0% 131%;
     background-repeat: no-repeat;
     position: relative;
@@ -435,13 +441,7 @@ a:hover {
           max-width: 250px;
           padding: 1rem;
           position: relative;
-          background: linear-gradient(
-            -76deg,
-            #3b7bf7 1%,
-            #47ff00 36%,
-            #ffde00 71%,
-            #eb0ef7 100%
-          );
+          background: linear-gradient(-76deg, #3b7bf7 1%, #47ff00 36%, #ffde00 71%, #eb0ef7 100%);
           padding: 3px;
           border-radius: 100px;
           .cardInterior {
@@ -491,7 +491,7 @@ a:hover {
         left: 0;
         position: relative;
         overflow: hidden;
-        img{
+        img {
           width: 100%;
         }
       }
@@ -507,7 +507,7 @@ a:hover {
   background-repeat: no-repeat;
   .serviceCont {
     padding-top: 4rem;
-    background-image: url('../images/slider_line_shape.png');
+    background-image: url("../images/slider_line_shape.png");
     .servicesTopHead {
       margin-left: 5%;
       color: white;
@@ -527,87 +527,38 @@ a:hover {
       line-height: 68px;
       text-align: center;
       margin: 4rem 0 3rem 0;
-  }
-      span {
-        color: #bfef2d;
-      }
     }
-    .servicesCardCont {
-      width: 97%;
-      // display: flex;
-      padding-bottom: 50px;
-      margin: auto;
-      .servicesCard {
-        width: 98%;
-        background: rgb(255 255 255 / 95%);
-        padding: 30px;
-        border-radius: 10px;
-        z-index: 111111;
+    span {
+      color: #bfef2d;
+    }
+  }
+  .servicesCardCont {
+    width: 97%;
+    // display: flex;
+    padding-bottom: 50px;
+    margin: auto;
+    .servicesCard {
+      width: 98%;
+      background: rgb(255 255 255 / 95%);
+      padding: 30px;
+      border-radius: 10px;
+      z-index: 111111;
+      position: relative;
+      display: block;
+
+      .servicesCardIcon {
         position: relative;
-        display: block;
-    
-        .servicesCardIcon {
-          position: relative;
-          display: flex;
-          justify-content: center;
-          width: 150px;
-          height: 150px;
-          border-radius: 50%;
-          margin: 1rem auto;
-          background: #fff;
-          align-items: center;
-          img {
-            width: 90px;
-          }
+        display: flex;
+        justify-content: center;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 1rem auto;
+        background: #fff;
+        align-items: center;
+        img {
+          width: 90px;
         }
-        
-        .servicesCardHead {
-          text-align: center;
-          font-size: 30px;
-          font-weight: 700;
-          margin-bottom: 10px;
-          line-height: 40px;
-          min-height: auto;
-          color: #000;
-        }
-        .servicesCardPara {
-          text-align: center;
-          color: #2c3145;
-          margin: auto;
-          width: 100%;
-          font-size: 17px;
-          line-height: 30px;
-          font-weight: 600;
-        }
-        .primaryButton {
-          margin: 26px auto 0px;
-          position: relative;
-          width: 200px;
-          justify-content: center;
-          align-items: center;
-        }
-        // .primaryButton::before {
-        //   position: absolute;
-        //   content: "";
-        //   top: -49px;
-        //   left: -67px;
-        //   width: 286px;
-        //   height: 163px;
-        //   border-radius: 50%;
-        //   background-color: rgb(0, 7, 26);
-        //   z-index: -1;
-        // }
-        // .primaryButton::after {
-        //   position: absolute;
-        //   content: "";
-        //   top: -42px;
-        //   left: -66px;
-        //   width: 284px;
-        //   height: 162px;
-        //   border-radius: 50%;
-        //   background: linear-gradient(90deg, #f90058 0%, #3e1cf3 100%);
-        //   z-index: -2;
-        // }
       }
 
       .servicesCardHead {
@@ -616,15 +567,17 @@ a:hover {
         font-weight: 700;
         margin-bottom: 10px;
         line-height: 40px;
-        min-height: 60px;
+        min-height: auto;
+        color: #000;
       }
       .servicesCardPara {
         text-align: center;
-        color: gainsboro;
+        color: #2c3145;
         margin: auto;
         width: 100%;
-        font-size: 15px;
-        line-height: 25px;
+        font-size: 17px;
+        line-height: 30px;
+        font-weight: 600;
       }
       .primaryButton {
         margin: 26px auto 0px;
@@ -656,12 +609,59 @@ a:hover {
       //   z-index: -2;
       // }
     }
-    .servicesCard:hover {
-      .servicesCardIcon::before {
-        opacity: 1;
-      }
+
+    .servicesCardHead {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      line-height: 40px;
+      min-height: 60px;
+    }
+    .servicesCardPara {
+      text-align: center;
+      color: gainsboro;
+      margin: auto;
+      width: 100%;
+      font-size: 15px;
+      line-height: 25px;
+    }
+    .primaryButton {
+      margin: 26px auto 0px;
+      position: relative;
+      width: 200px;
+      justify-content: center;
+      align-items: center;
+    }
+    // .primaryButton::before {
+    //   position: absolute;
+    //   content: "";
+    //   top: -49px;
+    //   left: -67px;
+    //   width: 286px;
+    //   height: 163px;
+    //   border-radius: 50%;
+    //   background-color: rgb(0, 7, 26);
+    //   z-index: -1;
+    // }
+    // .primaryButton::after {
+    //   position: absolute;
+    //   content: "";
+    //   top: -42px;
+    //   left: -66px;
+    //   width: 284px;
+    //   height: 162px;
+    //   border-radius: 50%;
+    //   background: linear-gradient(90deg, #f90058 0%, #3e1cf3 100%);
+    //   z-index: -2;
+    // }
+  }
+  .servicesCard:hover {
+    .servicesCardIcon::before {
+      opacity: 1;
     }
   }
+}
 .sectionService::before {
   display: block;
   content: "";
@@ -1082,13 +1082,7 @@ a:hover {
           height: 100%;
           padding: 45px;
           right: 0px;
-          background-image: linear-gradient(
-            -76deg,
-            #3b7bf7 1%,
-            #47ff00 36%,
-            #ffde00 71%,
-            #eb0ef7 100%
-          );
+          background-image: linear-gradient(-76deg, #3b7bf7 1%, #47ff00 36%, #ffde00 71%, #eb0ef7 100%);
           border-top-right-radius: 117px;
           border-bottom-left-radius: 117px;
           rotate: 10deg;
@@ -1119,8 +1113,7 @@ a:hover {
   background-repeat: no-repeat;
 }
 .section6 {
-  background: url(../images/cta_shape2.png) left,
-    url(../images/cta_shape3.png) right;
+  background: url(../images/cta_shape2.png) left, url(../images/cta_shape3.png) right;
   background-color: rgb(0, 7, 26);
   background-size: 400px;
   background-repeat: no-repeat;
@@ -1178,7 +1171,7 @@ a:hover {
       }
     }
     .footerM {
-      form{
+      form {
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -1207,7 +1200,7 @@ a:hover {
             padding: 10px;
             color: #fff;
             letter-spacing: 1px;
-            &:focus{
+            &:focus {
               outline: none !important;
             }
           }
@@ -1425,9 +1418,9 @@ a:hover {
     top: 75px;
     border: solid black;
     background-color: white;
-    box-shadow: 10px 10px 0px #671bcc; 
+    box-shadow: 10px 10px 0px #671bcc;
     z-index: 1;
-    .innovationCardText{
+    .innovationCardText {
       font-size: 32px;
       font-family: sans-serif;
       font-weight: 600;
@@ -1441,7 +1434,7 @@ a:hover {
       display: flex;
       justify-content: center;
       align-items: center;
-      a{
+      a {
         margin: 0;
       }
       a:hover {
@@ -1475,20 +1468,20 @@ a:hover {
         justify-content: space-between;
         .ceoCardButton {
           margin: 45px 0px 30px;
-          a {
-            font-size: 16px;
-            font-weight: 600;
-            color: white;
-            background-color: orangered;
-            padding: 12px;
-            width: fit-content;
-            border-radius: 23px;
-            margin: 20px;
-          }
-          a:hover {
-            color: white;
-            background-color: black;
-          }
+          // a {
+          //   font-size: 16px;
+          //   font-weight: 600;
+          //   color: white;
+          //   background-color: orangered;
+          //   padding: 12px;
+          //   width: fit-content;
+          //   border-radius: 23px;
+          //   margin: 20px;
+          // }
+          // a:hover {
+          //   color: white;
+          //   background-color: black;
+          // }
         }
         .ceoSignature {
           margin: auto 0px;
@@ -1538,10 +1531,9 @@ a:hover {
         font-weight: 700;
         width: 65%;
         margin: 0px 0 0px auto;
-        
       }
       .aboutUsImg {
-        img{
+        img {
           position: relative;
           top: 137px;
           right: 76px;
@@ -1554,17 +1546,16 @@ a:hover {
       .aboutUsCards {
         display: flex;
         .aboutUsCard {
-         
           border: solid rgb(255, 255, 255) 10px;
           /* height: 17rem; */
           margin: 40px 20px;
-          .aboutUsCardInner{
+          .aboutUsCardInner {
             border: solid black;
             /* margin-right: 30px; */
             height: 24rem;
             padding: 24px 41px;
             background-color: white;
-           
+
             .aboutUsSubHead {
               font-weight: 600;
               font-size: 21px;
@@ -1730,11 +1721,7 @@ a:hover {
     width: 95%;
     margin: auto;
   }
-  .section4
-    .section4Cont
-    .section4CardCont
-    .section4CardRight
-    .section4CardRightInt {
+  .section4 .section4Cont .section4CardCont .section4CardRight .section4CardRightInt {
     height: 100%;
     margin: 0;
     padding: 4%;
@@ -1829,28 +1816,33 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-     border-radius: 50% !important;
-     background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%) !important;
-    span{
+    border-radius: 50% !important;
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%) !important;
+    span {
       font-size: 39px;
       position: relative;
       top: -5px;
     }
   }
-  
 }
-#menus_link{
-  ul{
-    li{
+#menus_link {
+  ul {
+    li {
       position: relative;
-      .services_grid{
+      &:hover{
+       .services_grid{
+        display: block;
+       } 
+      }
+      .services_grid {
         position: absolute;
         width: 800px;
         top: 0;
         left: 0;
         padding-top: 46px;
-        z-index: -1;
-        #service_inner_mega_menu{
+        z-index: 1;
+        display: none;
+        #service_inner_mega_menu {
           display: flex;
           flex-wrap: wrap;
           justify-content: space-between;
@@ -1859,32 +1851,32 @@ a:hover {
           padding: 2rem;
           border-radius: 10px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-          .service_listings{
+          .service_listings {
             width: 48%;
             border-bottom: 1px solid #ccc;
-            a{
+            a {
               font-size: 13px;
-              font-weight: 600;
+              font-weight: 700;
               color: #050c1f;
               width: 100%;
               display: flex;
               height: 44px;
               justify-content: flex-start;
               align-items: center;
-              transition: all .4s;
-              img{
-                width: 40px;
-    margin-right: 10px;
+              transition: all 0.4s;
+              img {
+                width: 20px;
+                margin-right: 10px;
               }
-              &:hover{
+              &:hover {
                 background: #f8f8f8;
                 padding-left: 10px;
-                border-left: 9px solid #6a11cb;
+                border-left: 3px solid #6a11cb;
+                color: #000 !important;
               }
             }
           }
         }
-      
       }
     }
   }
