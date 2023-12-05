@@ -9,9 +9,17 @@ $(document).ready(function(){
     $('#owl-carousel1').owlCarousel({
         loop:true,
         nav:true,
-        items:2,
         margin:5,
+        item:2,
         dots:false,
+        responsive:{
+          0:{
+              items:1
+          },
+          700:{
+            item:1
+          }
+      }
     })
     $('#owl-carousel3').owlCarousel({
       loop:true,
@@ -31,3 +39,21 @@ $(document).ready(function(){
     back.classList.toggle("active")
   }
  
+
+//  $("#services").click(function () { 
+//   $(".services_grid").toggle
+//  });
+ $(".services").click(function(){
+  $(".services_grid").toggle();
+});
+$(".mobileMenu,.closeIcon").click(function(){
+  $(".sideMenu").toggle();
+  $(".menuIcon").toggleClass("fa-bars");
+  $(".menuIcon").toggleClass("fa-x");
+  // $(".navbar").toggle();
+});
+$(".toggleService").click(function (e) { 
+  $(".servicesTab").toggle();
+  $(".navbar").toggle();
+  $(".sideMenu").toggle();
+});
