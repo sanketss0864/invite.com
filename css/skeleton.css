@@ -1726,7 +1726,13 @@ a:hover {
   }
 }
 @media (max-width: 427px) {
-  .aboutUs .aboutUsCont {
+  .topButton {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    z-index: 3;
+  }
+  a .aboutUs .aboutUsCont {
     padding: 0px 0px;
   }
   .aboutUs .aboutUsCont .aboutUSR .aboutUsCards {
@@ -1839,7 +1845,7 @@ a:hover {
     height: fit-content;
     position: absolute;
     left: -39px;
-    bottom: -239px;
+    bottom: -297px;
   }
   .section1 .section1Cont .section1M .section1Head {
     font-size: 27px;
@@ -2101,6 +2107,7 @@ a:hover {
   height: 30px;
 }
 .servicesTab .serviceTabNav .serviceTabBack img {
+  padding: 0px 24px;
   align-self: center;
 }
 .servicesTab .service_listings {
