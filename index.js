@@ -43,10 +43,28 @@ $(document).ready(function(){
 //  $("#services").click(function () { 
 //   $(".services_grid").toggle
 //  });
+// $(document).ready(function(){
+//   $(".services").click(function(){
+//     $(".services_grid").toggle();
+//   });
+//   $(".mobileMenu,.closeIcon").click(function(){
+//     console.log("working..")
+//     $(".sideMenu").toggle();
+//     $(".menuIcon").toggleClass("fa-bars");
+//     $(".menuIcon").toggleClass("fa-x");
+//     // $(".navbar").toggle();
+//   });
+//   $(".toggleService").click(function (e) { 
+//     $(".servicesTab").toggle();
+//     $(".navbar").toggle();
+//     $(".sideMenu").toggle();
+//   });
+// });
  $(".services").click(function(){
   $(".services_grid").toggle();
 });
 $(".mobileMenu,.closeIcon").click(function(){
+  console.log("working")
   $(".sideMenu").toggle();
   $(".menuIcon").toggleClass("fa-bars");
   $(".menuIcon").toggleClass("fa-x");
@@ -56,4 +74,10 @@ $(".toggleService").click(function (e) {
   $(".servicesTab").toggle();
   $(".navbar").toggle();
   $(".sideMenu").toggle();
+});
+$(".accordionHeading").click(function(){
+  $(this).next().toggle();
+  $(this).children(".fa-solid").toggleClass("fa-plus");  
+  $(this).children(".fa-solid").toggleClass("fa-minus");
+  
 });
