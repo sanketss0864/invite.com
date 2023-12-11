@@ -6,20 +6,33 @@ $(document).ready(function(){
         center: true,
         items:1,
     })
+    $('#owl-carousel4').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      center: true,
+      items:1,
+  })
     $('#owl-carousel1').owlCarousel({
         loop:true,
         nav:true,
         margin:5,
         item:2,
         dots:false,
-        responsive:{
+        responsive: {
           0:{
-              items:1
+            items:1,
+            nav: false
           },
-          700:{
-            item:1
+          600:{
+            items:2,
+            nav: false
+          },
+          1000:{
+            items:2,
+            nav: false
           }
-      }
+        }
     })
     $('#owl-carousel3').owlCarousel({
       loop:true,
@@ -29,31 +42,41 @@ $(document).ready(function(){
       dots:false,
   //       mouseDrag: false,
   // touchDrag: false,
-  })
-  });
   
-  function menuToggle(){
-    const side=document.querySelector(".sideMenu")
-    const back=document.querySelector(".backdrop")
-    side.classList.toggle("active")
-    back.classList.toggle("active")
-  }
- 
-
-//  $("#services").click(function () { 
-//   $(".services_grid").toggle
-//  });
-$(document).ready(function(){
-  $(".mobileMenu").click(function(){
-    console.log("working")
-    $(".sideMenu").toggleClass("showMenu");
-    $(".menuIcon").toggleClass("fa-bars");
-    $(".menuIcon").toggleClass("fa-x");
-    // $(".navbar").toggle();
+  })
+  
   });
-});
+// $(document).ready(function(){
+//   $(".services").click(function(){
+//     $(".services_grid").toggle();
+//   });
+//   $(".mobileMenu,.closeIcon").click(function(){
+//     console.log("working..")
+//     // $(".sideMenu").toggleClass("active");
+//     $(".sideMenu").toggle();
+//     $(".menuIcon").toggleClass("fa-bars");
+//     $(".menuIcon").toggleClass("fa-x");
+//   });
+//   $(".toggleService").click(function (e) { 
+//     $(".servicesTab").toggle();
+//     $(".navbar").toggle();
+//     $(".sideMenu").toggle();
+//   });
+//   $(".accordionHeading").click(function(){
+//     $(this).next().toggle();
+//     $(this).children(".fa-solid").toggleClass("fa-plus");  
+//     $(this).children(".fa-solid").toggleClass("fa-minus");
+    
+//   });
+// });
+
  $(".services").click(function(){
   $(".services_grid").toggle();
+});
+$(".mobileMenu,.closeIcon").click(function(){
+  $(".sideMenu").toggle();
+  $(".menuIcon").toggleClass("fa-bars");
+  $(".menuIcon").toggleClass("fa-x");
 });
 
 $(".toggleService").click(function (e) { 

@@ -16,7 +16,7 @@ a:hover {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -143,36 +143,6 @@ a:hover {
     opacity: 0;
   }
 }
-.accordion {
-  --bs-accordion-border-color: black;
-  --bs-accordion-border-width: 1px;
-}
-
-.accordion-button:focus {
-  box-shadow: none;
-}
-
-.accordion-button:not(.collapsed) {
-  background-color: white;
-  color: #000;
-}
-
-.accordion-button:hover {
-  border: black solid 1px;
-  border-radius: 5px;
-}
-
-.accordion-item {
-  margin: 20px auto;
-  border: rgb(83, 83, 83) solid 1px;
-  border-radius: 5px;
-  width: 68%;
-}
-
-.accordion-item:not(:first-of-type) {
-  border: rgb(83, 83, 83) solid 1px;
-}
-
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
   background: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
@@ -185,6 +155,8 @@ a:hover {
 .primaryButton {
   color: #fff;
   padding: 12px 30px;
+  width: -moz-fit-content;
+  width: fit-content;
   min-width: 220px;
   max-width: 300px;
   border-radius: 20px;
@@ -193,8 +165,12 @@ a:hover {
   height: 65px;
   display: flex;
   justify-content: space-between;
+  margin: 4px 0px;
   align-items: center;
   background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+}
+.primaryButton a {
+  color: white;
 }
 
 .owl-carousel .owl-item img {
@@ -253,6 +229,7 @@ a:hover {
   font-size: 15px;
   font-weight: 700;
   opacity: 0.8;
+  cursor: pointer;
 }
 .navbar .navbarCont .navbarLinks .navbarlink {
   display: flex;
@@ -1441,12 +1418,14 @@ a:hover {
 .ceoTalk .ceoTalkContent {
   width: 80%;
   margin: auto;
+  padding: 60px 0px 0 0;
   display: flex;
-  padding: 60px 0px;
+  flex-direction: row-reverse;
+  position: relative;
 }
 .ceoTalk .ceoTalkContent .ceoTalkCard {
   position: relative;
-  width: 60%;
+  width: 80%;
   background: white;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -1480,21 +1459,21 @@ a:hover {
   top: -16px;
 }
 .ceoTalk .ceoTalkContent .ceoTalkCard .svg .svg2 {
+  transform: scaleX(-1);
   height: 100%;
   position: absolute;
-  left: -39px;
-  bottom: -140px;
+  right: -39px;
+  bottom: -150px;
 }
 .ceoTalk .ceoTalkContent .ceoImg {
-  width: 0;
+  width: 25%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: -48px;
+  bottom: 0;
 }
-.ceoTalk .ceoTalkContent .ceoImg img {
-  width: 579px;
-  position: relative;
-  right: 135px;
-  top: 60px;
-}
-
 .aboutUs {
   overflow: hidden;
   background-color: whitesmoke;
@@ -1709,7 +1688,7 @@ a:hover {
   padding: 0.3rem 0.5rem;
   margin: 0.8rem;
   align-items: center;
-  background-color: rgba(177, 189, 204, 0.758);
+  background-color: rgb(70, 117, 175);
   border-radius: 8px;
 }
 #menus_link ul li .services_grid #service_inner_mega_menu .startProjectCard img {
@@ -1717,18 +1696,20 @@ a:hover {
   width: 30px;
 }
 #menus_link ul li .services_grid #service_inner_mega_menu .startProjectCard .startCardText {
-  color: black;
+  color: rgb(255, 255, 255);
   padding: 1rem;
 }
 #menus_link ul li .services_grid #service_inner_mega_menu .startProjectCard .startCardText .start_project_link {
   display: flex;
-  color: #3395ff;
+  color: #ffffff;
 }
 #menus_link ul li .services_grid #service_inner_mega_menu .startProjectCard .startCardText .start_project_link a {
-  color: #3395ff;
+  color: #ffffff;
 }
 #menus_link ul li .services_grid #service_inner_mega_menu .startProjectCard .startCardText .start_project_link i {
-  color: #3395ff;
+  color: #ffffff;
+  align-self: center;
+  margin: 0px 5px;
 }
 
 .servicesTab {
@@ -1825,7 +1806,7 @@ a:hover {
 }
 
 .headingS {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -1861,7 +1842,7 @@ a:hover {
 }
 .sec1 .sec1Cont .sec1Img img {
   display: block;
-  width: 70%;
+  width: 82%;
   margin: 40px auto;
 }
 .sec1 .sec1Brands .sec1BrandsHead {
@@ -1889,18 +1870,18 @@ a:hover {
 }
 .sec1 .sec1Brands .sec1BrandSucces .sec1BrandCards .sec1BrandCard {
   width: 30%;
+  margin: 20px 20px;
 }
 .sec1 .sec1Brands .sec1BrandSucces .sec1BrandCards .sec1BrandCard .sec1BrandCardImg {
   align-items: center;
   display: flex;
-  width: 94%;
-  height: 15rem;
+  width: 100%;
   overflow: hidden;
   border-radius: 11px;
 }
 .sec1 .sec1Brands .sec1BrandSucces .sec1BrandCards .sec1BrandCard .sec1BrandCardImg img {
   position: relative;
-  width: auto;
+  width: 100%;
   transition: 300ms;
 }
 .sec1 .sec1Brands .sec1BrandSucces .sec1BrandCards .sec1BrandCard .sec1BrandCardImg img:hover {
@@ -1909,32 +1890,71 @@ a:hover {
 }
 .sec1 .sec1Brands .sec1BrandSucces .sec1BrandCards .sec1BrandCard .sec1BrandCardHead {
   color: #3c3c3c;
+  margin: 14px 2px;
 }
+.sec1 .sec1Brands .sec1BrandSucces .sec1BrandCards .sec1BrandCard .playstoreLink {
+  margin: 4px 0px;
+}
+.sec1 .sec1Brands .sec1BrandSucces .sec1BrandCards .sec1BrandCard .playstoreLink a img {
+  width: 47%;
+  margin: 10px 7px;
+}
+.sec1 .sec1Brands .sec1BrandSucces .sec1BrandCards .sec1BrandCard .sec1BrandCardPara {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .sec2 .sec2Cont .sec2Img {
-  width: 100%;
+  overflow: hidden;
   margin: auto;
+  width: 100%;
+  box-shadow: 0px 0px 31px #d2d2d2;
+  border-radius: 19px;
+  margin-bottom: 30px;
+  overflow: hidden;
 }
 .sec2 .sec2Cont .sec2Img img {
   width: 100%;
+  position: relative;
+  left: -7%;
 }
 
 .sec3 .sec3Cont .sec3Cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 2%;
-  justify-content: center;
+  justify-content: space-between;
 }
 .sec3 .sec3Cont .sec3Cards .sec3Card {
   width: 30%;
   margin-top: 2%;
 }
 .sec3 .sec3Cont .sec3Cards .sec3Card .sec3CardImg {
-  background-color: #ebf3f5;
   border-radius: 16px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 8px 0px;
+  padding: 14px;
+}
+.sec3 .sec3Cont .sec3Cards .sec3Card .sec3CardImg img {
+  width: 80px;
+}
+.sec3 .sec3Cont .sec3Cards .sec3Card .sec3CardPara {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.sec4 .sec4Cont .sec4Img {
+  margin: auto;
+  width: 85%;
+  box-shadow: 0px 0px 31px #d2d2d2;
+  border-radius: 19px;
+  margin-bottom: 30px;
+  overflow: hidden;
 }
 .sec4 .sec4Cont .sec4Img img {
   width: 100%;
@@ -1974,41 +1994,50 @@ a:hover {
 
 .sec6 .sec6Cont .sec6Card {
   display: flex;
+  justify-content: space-between;
   margin: 50px 0px;
 }
 .sec6 .sec6Cont .sec6Card .sec6L {
-  width: 50%;
+  width: 48%;
 }
 .sec6 .sec6Cont .sec6Card .sec6L img {
   border-radius: 12px;
+  width: 100%;
 }
 .sec6 .sec6Cont .sec6Card .sec6L .sec6Icons {
   display: flex;
+  margin: 10px 0px;
+  gap: 15px;
 }
 .sec6 .sec6Cont .sec6Card .sec6L .sec6Icons .sec6Icon {
-  padding: 1px;
+  padding: 0px;
   border: rgba(44, 44, 44, 0.3529411765) 1px solid;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 5px;
+  background-color: white;
 }
 .sec6 .sec6Cont .sec6Card .sec6R {
-  width: 50%;
+  width: 48%;
 }
 .sec6 .sec6Cont .sec6Card .sec6R img {
   border-radius: 12px;
+  width: 100%;
 }
 .sec6 .sec6Cont .sec6Card .sec6R .sec6Icons {
   display: flex;
+  margin: 10px 0px;
+  gap: 15px;
 }
 .sec6 .sec6Cont .sec6Card .sec6R .sec6Icons .sec6Icon {
-  padding: 1px;
+  padding: 0px;
   border: rgba(44, 44, 44, 0.3529411765) 1px solid;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 5px;
+  background-color: white;
 }
 .sec8 .sec8Cont .sec8Cards {
   display: flex;
@@ -2099,7 +2128,9 @@ a:hover {
   text-align: center;
 }
 .sec11 .sec11Cont .accordion {
-  border: solid 1px black;
+  border: solid 1.5px rgb(164, 164, 164);
+  box-shadow: 0 0 1px transparent;
+  border-radius: 12px;
   margin: 20px auto;
   padding: 9px;
   width: 70%;
@@ -2108,8 +2139,9 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 0px;
+  padding: 5px 10px;
   font-weight: 600;
+  letter-spacing: 0px;
 }
 .sec11 .sec11Cont .accordion .accordionHeading i {
   color: white;
@@ -2118,9 +2150,12 @@ a:hover {
   background-color: #00071a;
 }
 .sec11 .sec11Cont .accordion .accordionPan {
-  border-top: solid 1px black;
   padding: 20px 0px;
   font-weight: 400;
+}
+.sec11 .sec11Cont .accordion:hover {
+  border-color: black;
+  cursor: pointer;
 }
 
 .sec12 .sec12Card {
@@ -2138,6 +2173,116 @@ a:hover {
   width: fit-content;
   border-radius: 8px;
 }
+.testimonial {
+  background-color: rgb(241, 241, 241);
+  position: relative;
+}
+.testimonial::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: url(../images/mobie\ testimonial\ bg.jpg);
+  width: 100%;
+  height: 400px;
+}
+.testimonial .testimonial-cont {
+  padding: 4rem 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+.testimonial .testimonial-cont .testimonialL {
+  width: 50%;
+}
+.testimonial .testimonial-cont .testimonialL .testimonial-head {
+  line-height: 59px;
+}
+.testimonial .testimonial-cont .testimonialL .testimonial-button {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 700;
+  padding: 15px 41px;
+  background-color: white;
+  color: #3F51B5;
+  box-shadow: 0px 3px 28px rgba(136, 136, 136, 0.4784313725);
+}
+.testimonial .testimonial-cont .testimonialL .testimonial-bottom {
+  position: relative;
+  width: 70%;
+}
+.testimonial .testimonial-cont .testimonialL .testimonial-bottom .testimonial-card {
+  background-color: white;
+  padding: 4% 6%;
+  display: flex;
+  width: 100%;
+  margin: 0px 0px 1.5rem;
+}
+.testimonial .testimonial-cont .testimonialL .testimonial-bottom .testimonial-card .testimonial-cardL .testimonial-cardQu img {
+  width: 30px;
+}
+.testimonial .testimonial-cont .testimonialL .testimonial-bottom .testimonial-card .testimonial-cardL .testimonial-cardStar {
+  display: flex;
+  margin: 5px 0px;
+}
+.testimonial .testimonial-cont .testimonialL .testimonial-bottom .testimonial-card .testimonial-cardL .testimonial-card-para {
+  margin: 8px 0px;
+  width: 95%;
+}
+.testimonial .testimonial-cont .testimonialL .testimonial-bottom .testimonial-card .testimonial-cardR {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+.testimonial .testimonial-cont .testimonialL .testimonial-bottom .testimonial-card .testimonial-cardR .testimonial-card-logo img {
+  width: 100%;
+  scale: 1.3;
+}
+.testimonial .testimonial-cont .testimonialR {
+  width: 40%;
+  height: auto;
+  z-index: 2;
+}
+.testimonial .testimonial-cont .testimonialR .testimonial-cards {
+  position: relative;
+}
+.testimonial .testimonial-cont .testimonialR .testimonial-cards .testimonial-card {
+  background-color: white;
+  padding: 4% 6%;
+  display: flex;
+  width: 100%;
+  margin: 0px 0px 1.5rem;
+}
+.testimonial .testimonial-cont .testimonialR .testimonial-cards .testimonial-card .testimonial-cardL .testimonial-cardQu img {
+  width: 30px;
+}
+.testimonial .testimonial-cont .testimonialR .testimonial-cards .testimonial-card .testimonial-cardL .testimonial-cardStar {
+  display: flex;
+  margin: 5px 0px;
+}
+.testimonial .testimonial-cont .testimonialR .testimonial-cards .testimonial-card .testimonial-cardL .testimonial-card-para {
+  margin: 8px 0px;
+}
+.testimonial .testimonial-cont .testimonialR .testimonial-cards .testimonial-card .testimonial-cardR {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+.testimonial .testimonial-cont .testimonialR .testimonial-cards .testimonial-card .testimonial-cardR .testimonial-card-logo img {
+  width: 100%;
+  scale: 1.3;
+}
+.testimonial .testimonialBg {
+  height: 14rem;
+  overflow: hidden;
+  margin-top: 20%;
+}
+.testimonial .testimonialBg img {
+  width: 100%;
+  position: relative;
+  bottom: 12rem;
+  z-index: 0;
+}
+
 @media (max-width: 768px) {
   .servicesTab .service_listings .service_listing {
     width: 100%;
@@ -2341,6 +2486,7 @@ a:hover {
   }
   .ceoTalk .ceoTalkContent .ceoImg img {
     width: 100%;
+    display: none;
   }
   .section6 .section6Cont {
     flex-wrap: wrap;
@@ -2407,7 +2553,6 @@ a:hover {
   }
   .sec6 .sec6Cont .sec6Card {
     margin: 16px auto;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
   }
@@ -2480,16 +2625,16 @@ a:hover {
     letter-spacing: 1px;
     margin: 6px auto 11px;
   }
-  .sec3 .sec3Cont .sec3Cards .sec3Card {
-    width: 25%;
-    margin: 2%;
-  }
   .headingM {
     font-size: 21px;
     font-weight: 700;
     line-height: 25px;
     color: #2c3145;
     margin: 43px auto 20px;
+  }
+  .sec3 .sec3Cont .sec3Cards .sec3Card {
+    width: 25%;
+    margin: 2%;
   }
   .sec5 .sec5Cards .sec5Card .sec5CardImg img {
     border-radius: 8px;
@@ -2501,6 +2646,10 @@ a:hover {
   }
 }
 @media (max-width: 427px) {
+  .navbar .navbarCont .navbarLinks .navbarLogo {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
   .sec11 .sec11Cont .accordion {
     width: 100%;
   }
@@ -2554,7 +2703,7 @@ a:hover {
   }
   .sec1 .sec1Brands .sec1BrandSucces .sec1BrandCards .sec1BrandCard .sec1BrandCardImg {
     width: 94%;
-    height: 8rem;
+    height: 11rem;
   }
   .sec8 .sec8Cont .sec8Cards .sec8Card {
     width: 100%;
@@ -2609,16 +2758,37 @@ a:hover {
     letter-spacing: 1px;
     margin: 6px auto 11px;
   }
-  .sec3 .sec3Cont .sec3Cards .sec3Card {
-    width: 97%;
-    margin-top: 2%;
-  }
   .headingM {
     font-size: 21px;
     font-weight: 700;
     line-height: 25px;
     color: #2c3145;
     margin: 43px auto 20px;
+  }
+  .dark {
+    padding: 1% 0;
+  }
+  .dark .paraL {
+    font-size: 16px;
+    color: grey;
+  }
+  .dark .paraM {
+    font-size: 15.5px;
+    color: gray;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 6px auto 11px;
+  }
+  .dark .headingM {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25px;
+    color: white;
+    margin: 43px auto 20px;
+  }
+  .sec3 .sec3Cont .sec3Cards .sec3Card {
+    width: 97%;
+    margin-top: 2%;
   }
   .sec5 .sec5Cards .sec5Card .sec5CardImg img {
     border-radius: 8px;
@@ -2674,7 +2844,8 @@ a:hover {
   .sectionService .serviceCont .servicesHead {
     width: 100%;
     font-size: 29px;
-    margin: 2rem 0px;
+    line-height: 25px;
+    margin: 5rem 0px 2rem;
   }
   .aboutUs .aboutUsCont .aboutUSR .aboutUsCards .aboutUsCard .aboutUsCardInner .aboutUsMainHead {
     font-size: 63px;
@@ -2686,6 +2857,16 @@ a:hover {
   }
   .section5 .section5Cont .section5R .sectionRCardCont .section5RCard .review .stars {
     margin: 0;
+  }
+  .section5 .section5Cont .section5R .sectionRCardCont .section5RCard {
+    width: 92%;
+    padding: 2rem 0;
+    background: #00071a;
+    border-top-right-radius: 117px;
+    border-bottom-left-radius: 117px;
+    margin: auto;
+    position: relative;
+    border: 1px solid #ccc;
   }
   .section5 .section5Cont .section5R .sectionRCardCont .section5RCard .review {
     flex-wrap: wrap;
@@ -2893,7 +3074,4 @@ a:hover {
   .section1 .section1Cont .section1M .section1Card .section1CR .section1CHead {
     padding: 4px 0px 3px;
   }
-}
-.showMenu {
-  display: block !important;
 }/*# sourceMappingURL=skeleton.css.map */
