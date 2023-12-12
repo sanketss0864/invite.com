@@ -1,392 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Basic Page Needs
-          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8" />
-    <title>Hire Web Developers | Top Angular Developers India</title>
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+<?php include './inc/header.php';?>
 
-    <!-- Mobile Specific Metas
-          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    />
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- FONT
-          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link
-      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
-      rel="stylesheet"
-      type="text/css"
-    />
-
-    <!-- CSS
-          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
-    />
-    <link rel="stylesheet" href="css/skeleton.css" />
-    <!-- Favicon
-          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-    <!-- script
-          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
-  </head>
-  <body>
-    <div id="side" class="sideMenu">
-      <div class="closeButton">
-        <div class="webLogo"><img src="images/logo.png" alt="" /></div>
-        <!-- <i class="fa-solid fa-arrow-left closeIcon"></i> -->
-        <img src="images/left-arrow.png" alt="" />
-      </div>
-      <div class="sideMenuCont">
-        <div class="menuList">
-          <div class="menuItem toggleService">
-            <div>Services</div>
-            <i class="fa-solid fa-chevron-right"></i>
-          </div>
-          <div class="menuItem">Pages</div>
-          <div class="menuItem">Blog</div>
-          <div class="menuItem">Shop</div>
-          <div class="menuItem">Contact</div>
-        </div>
-        <div class="sideMenuButtons">
-          <div class="primaryButton">Start A New Project</div>
-          <div class="contactUSButton">Contact us</div>
-        </div>
-      </div>
-    </div>
-    <div class="servicesTab">
-      <div class="serviceTabNav">
-        <div class="serviceTabLogo"><img src="images/logo.png" alt="" /></div>
-        <div class="serviceTabBack">
-          <img class="toggleService" src="images/left-arrow.png" alt="" />
-        </div>
-      </div>
-      <div class="service_listings">
-        <div class="service_listing">
-          <a href="#">
-            <img src="./images/code.png" alt="" />Web Development Solutions</a
-          >
-        </div>
-        <div class="service_listing">
-          <a href="#">
-            <img src="./images/code.png" alt="" /> E-commerce Development
-          </a>
-        </div>
-        <div class="service_listing">
-          <a href="mobile-services-page.html">
-            <img src="./images/ecommerce.png" alt="" /> Mobile App Development
-          </a>
-        </div>
-        <div class="service_listing">
-          <a href="#">
-            <img src="./images/feedback.png" alt="" /> UI/UX Design Services
-          </a>
-        </div>
-        <div class="service_listing">
-          <a href="#">
-            <img src="./images/drawing-tablet.png" alt="" /> Web Hosting &
-            Maintenance
-          </a>
-        </div>
-        <div class="service_listing">
-          <a href="#">
-            <img src="./images/database.png" alt="" /> SEO & Digital Marketing
-          </a>
-        </div>
-        <div class="service_listing">
-          <a href="#">
-            <img src="./images/web-link.png" alt="" /> Content Management
-            Systems (CMS)
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="navbar">
-      <div class="navbarCont">
-        <div class="navbarLinks">
-          <div class="navbarLogo">
-            <a href="index.html"><img src="images/logo-white.png" alt="" /></a>
-          </div>
-          <div id="menus_link">
-            <ul>
-              <li>
-                <a class="navbarlink" href="index.html">Home</a>
-              </li>
-              <li>
-                <a class="navbarlink" href="company-profile.html"
-                  >How We Work</a
-                >
-              </li>
-              <li>
-                <a id="services" class="navbarlink services"
-                  >Services<i class="fa-solid fa-chevron-down"></i><span></span>
-                </a>
-                <div class="services_grid">
-                  <div id="service_inner_mega_menu">
-                    <div class="service_listings">
-                      <div class="service_listing">
-                        <a href="#">
-                          <img src="./images/code.png" alt="" />Web Development
-                          Solutions</a
-                        >
-                      </div>
-                      <div class="service_listing">
-                        <a href="#">
-                          <img src="./images/code.png" alt="" /> E-commerce
-                          Development
-                        </a>
-                      </div>
-                      <div class="service_listing">
-                        <a href="mobile-services-page.html">
-                          <img src="./images/ecommerce.png" alt="" /> Mobile App
-                          Development
-                        </a>
-                      </div>
-                      <div class="service_listing">
-                        <a href="#">
-                          <img src="./images/feedback.png" alt="" /> UI/UX
-                          Design Services
-                        </a>
-                      </div>
-                      <div class="service_listing">
-                        <a href="#">
-                          <img src="./images/drawing-tablet.png" alt="" /> Web
-                          Hosting & Maintenance
-                        </a>
-                      </div>
-                      <div class="service_listing">
-                        <a href="#">
-                          <img src="./images/database.png" alt="" /> SEO &
-                          Digital Marketing
-                        </a>
-                      </div>
-                      <div class="service_listing">
-                        <a href="#">
-                          <img src="./images/web-link.png" alt="" /> Content
-                          Management Systems (CMS)
-                        </a>
-                      </div>
-                    </div>
-                    <div class="startProjectCard">
-                      <img src="images/rocket.png" alt="" />
-                      <div class="startCardText">
-                        Do you need custom software or tool for your business?
-                        We can help you.
-                        <div class="start_project_link">
-                          <a href="">Start a Project</a
-                          ><i class="fa-solid fa-arrow-right"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <a class="navbarlink" href="our-customers.html">Customers</a>
-              </li>
-              <li>
-                <a class="navbarlink" href="reviews.html">Reviews</a>
-              </li>
-              <li>
-                <a class="navbarlink" href="talk-to.html">Talk To Us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="menuContainer">
-          <div class="navContact">
-            <div class="phoneLogo"><i class="fa-solid fa-phone"></i></div>
-            <div class="phoneNo">
-              <div>Want to Discuss:</div>
-              <div>+91(123)56789</div>
-            </div>
-          </div>
-          <!-- <div class="navButton">
-            <img src="images/menu.png" alt="" onclick="menuToggle()" />
-          </div> -->
-          <!-- <div class="navButton"><img src="images/menu.png" alt="" onclick="menuToggle()"/></div> -->
-        </div>
-        <div class="mobileMenu"><i class="fa-solid fa-bars menuIcon"></i></div>
-      </div>
-    </div>
-    <div id="nav" class="sec1">
-      <div class="sec1Cont cont">
-        <div class="sec1Head headingL">Creating Mobile Apps</div>
-        <div class="sec1Para paraL">
-          Revamp your concept into an innovative mobile<br />
-          journey using premier app development services.
-        </div>
-        <div class="primaryButton"><a href="">Start a Project</a></div>
-        <div class="sec1Img">
-          <img src="/images/mobile-hero-1.gif" alt="" />
-        </div>
-      </div>
-      <div class="sec1Brands">
-        <div class="sec1BrandSucces">
-          <div class="sec1BrandSuccesHead headingM">Customer Success Story</div>
-          <div class="sec1BrandCards">
-            <div class="sec1BrandCard">
-              <div class="sec1BrandCardImg">
-                <img src="images/fresh-k-chicken.gif" alt="" />
-              </div>
-              <div class="sec1BrandCardHead headingS">Fresh K Chicken</div>
-              <div class="playstoreLink">
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.customer.freshkchicken&pli=1"
-                  ><img src="images/google-play.png" alt=""
-                /></a>
-              </div>
-              <div class="sec1BrandCardPara paraS">
-                Build a online market for fresh meat uers for FreshKChicken:
-                linking customers to nearby vendors providing a wide array of
-                fresh meats. We prioritize transparency, quality, and
-                convenience, fostering community bonds and supporting local
-                businesses. Count on us as your go-to, delivering all your meat
-                essentials right to your doorstep.
-              </div>
-            </div>
-            <div class="sec1BrandCard">
-              <div class="sec1BrandCardImg">
-                <img src="images/vip-india.gif" alt="" />
-              </div>
-              <div class="sec1BrandCardHead headingS">
-                VIPINDIA.com Search Dial
-              </div>
-              <div class="playstoreLink">
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.Vip.vipindia"
-                  ><img src="images/google-play.png" alt=""
-                /></a>
-              </div>
-              <div class="sec1BrandCardPara paraS">
-                Build a Local Search Engine to Update VIP india group:"Update
-                your personal and business profiles effortlessly on a vast local
-                search engine. Expand your visibility and business globally.
-              </div>
-            </div>
-            <div class="sec1BrandCard">
-              <div class="sec1BrandCardImg">
-                <img src="images/bass-boster.gif" alt="" />
-              </div>
-              <div class="sec1BrandCardHead headingS">
-                Music Equalizer & Bass Booster
-              </div>
-              <div class="playstoreLink">
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.equalizer.android"
-                  ><img src="images/google-play.png" alt=""
-                /></a>
-              </div>
-              <div class="sec1BrandCardPara paraS">
-                Improve your device's audio using Equalizer, Bass Boost, and 3D
-                Virtualizer. Tailor sound effects with Bass Booster for optimal
-                music enjoyment. Experience our innovative 'Gesture
-                controls'—operational even on a locked screen—for swift actions
-                like volume adjustment, Play/Pause, or track changes. Swipe
-                anywhere for quick control, ideal for activities like driving or
-                workouts.
-              </div>
-            </div>
-            <div class="sec1BrandCard">
-              <div class="sec1BrandCardImg">
-                <img src="images/mk-classes.gif" alt="" />
-              </div>
-              <div class="sec1BrandCardHead headingS">Manish Kumar Classes</div>
-              <div class="playstoreLink">
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.exam.app.manishclass"
-                  ><img src="images/google-play.png" alt=""
-                /></a>
-              </div>
-              <div class="sec1BrandCardPara paraS">
-                Build a online sotre for Exams Preparation in India for Primus
-                Corporation: Safety starts with understanding how developers
-                collect and share your data. Data privacy and security practices
-                may vary based on your use, region, and age. The developer
-                provided this information and may update it over time.
-              </div>
-            </div>
-            <div class="sec1BrandCard">
-              <div class="sec1BrandCardImg">
-                <img src="images/fresh-k-deliver.gif" alt="" />
-              </div>
-              <div class="sec1BrandCardHead headingS">
-                VIPINDIA.com Search Dial
-              </div>
-              <div class="playstoreLink">
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.deliveryboy.delivery"
-                  ><img src="images/google-play.png" alt=""
-                /></a>
-              </div>
-              <div class="sec1BrandCardPara paraS">
-                Build a online market for deliver partner to deliver fresh meat
-                at users door steos FreshKChicken :At FreshKChicken.com, our
-                mission is simple - to connect customers with local shopkeepers
-                who offer a diverse range of raw meats. We believe in promoting
-                transparency, quality, and convenience in the meat-buying
-                process, while fostering community relationships and supporting
-                local businesses. We aim to be your trusted source for all your
-                meat needs, from the comfort of your own home.
-              </div>
-            </div>
-            <div class="sec1BrandCard">
-              <div class="sec1BrandCardImg">
-                <img src="images/maxi-smart.gif" alt="" />
-              </div>
-              <div class="sec1BrandCardHead headingS">
-                MaxisMart - Online Grocery App
-              </div>
-              <div class="playstoreLink">
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.maxismart.ecommercesolution"
-                  ><img src="images/google-play.png" alt=""
-                /></a>
-              </div>
-              <div class="sec1BrandCardPara paraS">
-                build a online grocery by platform for users which deliverd
-                their fresh vegetations at their door steps: An online shopping
-                app with plenty of options from grocery to stationary that too
-                at pocket friendly price and comes under top shopping apps. It
-                promises to give exemplary goods with the best quality in the
-                entire market. In terms of groceries there is no other app in
-                its competition. Its discounts keep on amazing people and blow
-                their minds. Such pocket friendly rates only compels people to
-                buy more and more products which increases the demands every
-                time. Maxismart is the largest online food and grocery store.
-                With over 18,000 products and over a 1000 brands in our
-                catalogue you will find everything you are looking for. Right
-                from fresh Fruits and Vegetables, Rice and Dal, Spices and
-                Seasonings to Packaged products, Beverages, Personal care
-                products, Meats – we have it all.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="sec2">
       <div class="sec2Cont cont">
         <div class="sec2Head headingM contM">
@@ -417,7 +30,7 @@
         <div class="sec3Cards">
           <div class="sec3Card">
             <div class="sec3CardImg">
-              <img src="/images/high-performance.png" alt="" />
+              <img src="images/high-performance.png" alt="" />
             </div>
             <div class="sec3CardHead headingS">Ensure Optimal Performance</div>
             <div class="sec3CardPara paraM">
@@ -429,7 +42,7 @@
           </div>
           <div class="sec3Card">
             <div class="sec3CardImg">
-              <img src="/images/target.png" alt="" />
+              <img src="images/target.png" alt="" />
             </div>
             <div class="sec3CardHead headingS">Engage Targeted Users</div>
             <div class="sec3CardPara paraM">
@@ -440,7 +53,7 @@
           </div>
           <div class="sec3Card">
             <div class="sec3CardImg">
-              <img src="/images/fast-delivery.png" alt="" />
+              <img src="images/fast-delivery.png" alt="" />
             </div>
             <div class="sec3CardHead headingS">Prompt Updates</div>
             <div class="sec3CardPara paraM">
@@ -450,7 +63,7 @@
           </div>
           <div class="sec3Card">
             <div class="sec3CardImg">
-              <img src="/images/brand.png" alt="" />
+              <img src="images/brand.png" alt="" />
             </div>
             <div class="sec3CardHead headingS">Expand Brand Reach</div>
             <div class="sec3CardPara paraM">
@@ -460,7 +73,7 @@
           </div>
           <div class="sec3Card">
             <div class="sec3CardImg">
-              <img src="/images/reliability.png" alt="" />
+              <img src="images/reliability.png" alt="" />
             </div>
             <div class="sec3CardHead headingS">Build Trust & Loyalty</div>
             <div class="sec3CardPara paraM">
@@ -470,7 +83,7 @@
           </div>
           <div class="sec3Card">
             <div class="sec3CardImg">
-              <img src="/images/loading-arrow.png" alt="" />
+              <img src="images/loading-arrow.png" alt="" />
             </div>
             <div class="sec3CardHead headingS">
               Deliver Exceptional Experience
@@ -508,7 +121,7 @@
           </p>
         </div>
         <div class="sec4Img">
-          <img src="/images/webkul-customer-apps.jpg" alt="" />
+          <img src="images/webkul-customer-apps.jpg" alt="" />
         </div>
       </div>
     </div>
@@ -816,6 +429,4 @@
     <div class="topButton">
       <a href="#nav"><i class="fa-solid fa-chevron-up"></i></a>
     </div>
-    <script src="index.js"></script>
-  </body>
-</html>
+    <?php include './inc/fotter.php';?>

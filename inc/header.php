@@ -86,7 +86,7 @@
       </div>
       <div class="service_listings">
         <div class="service_listing">
-          <a href="#">
+          <a href="web-development-solution.php">
             <img src="./images/code.png" alt="" />Web Development Solutions</a
           >
         </div>
@@ -96,7 +96,7 @@
           </a>
         </div>
         <div class="service_listing">
-          <a href="mobile-services-page.html">
+          <a href="mobile-services-page.php">
             <img src="./images/ecommerce.png" alt="" /> Mobile App Development
           </a>
         </div>
@@ -124,50 +124,20 @@
         </div>
       </div>
     </div>
-    <!-- <div class="navbar">
-      <div class="navbarCont">
-        <div class="navbarLinks">
-          <div class="navbarLogo"><img src="images/logo.png" alt="" /></div>
-          <div class="navbarlink">
-            <div class="dropdown">
-              <div class="dropbtn">Services</div>
-              <div class="dropdown-content">
-                <a href="#">UI/UX</a>
-                <a href="#">Designing</a>
-                <a href="#">Seo</a>
-              </div>
-            </div>
-          </div>
-          <div class="navbarlink">Pages</div>
-          <div class="navbarlink">Blog</div>
-          <div class="navbarlink">Shop</div>
-          <div class="navbarlink">Contact</div>
-        </div>
-        <div class="menuContainer">
-          <div class="navContact">
-            <div class="phoneLogo"><i class="fa-solid fa-phone"></i></div>
-            <div class="phoneNo">
-              <div>Want to Discuss:</div>
-              <div>+91(123)56789</div>
-            </div>
-          </div>
-          <div class="navButton"><img src="images/menu.png" alt="" onclick="menuToggle()"/></div>
-        </div>
-      </div>
-    </div> -->
+   
     <div class="navbar">
       <div class="navbarCont">
         <div class="navbarLinks">
           <div class="navbarLogo" >
-            <a href="index.html"><img  src="images/logo-white.png" alt="" /></a>
+            <a href="index.php"><img  src="images/logo-white.png" alt="" /></a>
           </div>
           <div id="menus_link">
             <ul>
               <li>
-                <a class="navbarlink" href="index.html">Home</a>
+                <a class="navbarlink" href="index.php">Home</a>
               </li>
               <li>
-                <a class="navbarlink" href="company-profile.html"
+                <a class="navbarlink" href="company-profile.php"
                   >How We Work</a
                 >
               </li>
@@ -179,7 +149,7 @@
                   <div id="service_inner_mega_menu">
                     <div class="service_listings">
                       <div class="service_listing">
-                        <a href="#">
+                        <a href="web-development-solution.php">
                           <img src="./images/code.png" alt="" />Web Development
                           Solutions</a
                         >
@@ -191,7 +161,7 @@
                         </a>
                       </div>
                       <div class="service_listing">
-                        <a href="mobile-services-page.html">
+                        <a href="mobile-services-page.php">
                           <img src="./images/ecommerce.png" alt="" /> Mobile App
                           Development
                         </a>
@@ -236,13 +206,13 @@
                 </div>
               </li>
               <li>
-                <a class="navbarlink" href="our-customers.html">Customers</a>
+                <a class="navbarlink" href="our-customers.php">Customers</a>
               </li>
               <li>
-                <a class="navbarlink" href="reviews.html">Reviews</a>
+                <a class="navbarlink" href="reviews.php">Reviews</a>
               </li>
               <li>
-                <a class="navbarlink" href="talk-to.html">Talk To Us</a>
+                <a class="navbarlink" href="talk-to.php">Talk To Us</a>
               </li>
             </ul>
           </div>
@@ -255,10 +225,7 @@
               <div>+91(123)56789</div>
             </div>
           </div>
-          <!-- <div class="navButton">
-            <img src="images/menu.png" alt="" onclick="menuToggle()" />
-          </div> -->
-          <!-- <div class="navButton"><img src="images/menu.png" alt="" onclick="menuToggle()"/></div> -->
+        
         </div>
         <div class="mobileMenu"><i class="fa-solid fa-bars menuIcon"></i></div>
       </div>

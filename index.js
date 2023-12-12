@@ -5,6 +5,7 @@ $(document).ready(function(){
         nav:true,
         center: true,
         items:1,
+        autoplay:true,
     })
     $('#owl-carousel4').owlCarousel({
       loop:true,

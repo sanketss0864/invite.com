@@ -44,7 +44,7 @@
       </div>
     </div>
     <div class="section2">
-      <!-- <div class="section2Top"></div> -->
+  
       <div class="section2Cont">
         <div class="section2L"><img src="images/aobut_img2.png" alt="" /></div>
         <div class="section2M">
@@ -109,9 +109,7 @@
     </div>
     <div class="sectionService">
       <div class="serviceCont">
-        <!-- <div class="servicesTopHead">
-          <img src="images/sh_icon2.png" alt="" />Best IT Company in UK!
-        </div> -->
+     
         <div class="servicesHead">Some of Our <span>Services</span></div>
         <div id="owl-carousel1" class="servicesCardCont owl-carousel owl-theme">
           <div class="servicesCard item">
@@ -222,7 +220,7 @@
             <div class="ceoSignature">
               <div class="ceoName">Faiz Ahmad,Ceo</div>
               <div class="ceoSign">
-                <!-- <img src="images/logo-Qtrac.svg" alt="" /> -->
+              
               </div>
             </div>
           </div>
@@ -491,142 +489,5 @@
         <div class="section3Head"></div>
       </div>
     </div>
-    <!-- <div class="section4">
-      <div   class="section4Cont ">
-        <div class="section4TopHead">
-          <img src="images/sh_icon2.png" alt="" />Best IT Company in UK!
-        </div>
-        <div class="section4Head">We have <span>work </span>sample</div>
-        <div id="owl-carousel3" class="section4cards owl-carousel owl-theme">
-          <div class="section4CardCont item">
-            <div class="section4CardLeft">
-              <img src="images/img_02-1.webp" alt="" />
-            </div>
-            <div class="section4CardM">
-              <img src="images/img_03.webp" alt="" />
-            </div>
-            <div class="section4CardRight">
-              <div class="section4CardRightInt">
-                <div class="section4CardRightHead">
-                  Disaster Recovery&<br />Backup of Deployment
-                </div>
-                <div class="section4CardRightPara">
-                  Connectivity performance is key to business operations. We offer
-                  a range of Broadband, Leased Line & other connectivity.
-                </div>
-                <div class="section4CardBottom">
-                  <div class="section4CardNo">01/<span>01</span></div>
-                  <div class="section4CardArrow">
-                    <i class="fa-solid fa-arrow-left"></i>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="section4CardCont item">
-            <div class="section4CardLeft">
-              <img src="images/img_02-1.webp" alt="" />
-            </div>
-            <div class="section4CardM">
-              <img src="images/img_03.webp" alt="" />
-            </div>
-            <div class="section4CardRight">
-              <div class="section4CardRightInt">
-                <div class="section4CardRightHead">
-                  Disaster Recovery&<br />Backup of Deployment
-                </div>
-                <div class="section4CardRightPara">
-                  Connectivity performance is key to business operations. We offer
-                  a range of Broadband, Leased Line & other connectivity.
-                </div>
-                <div class="section4CardBottom">
-                  <div class="section4CardNo">02/<span>01</span></div>
-                  <div class="section4CardArrow">
-                    <i class="fa-solid fa-arrow-left"></i>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="section4CardCont item">
-            <div class="section4CardLeft">
-              <img src="images/img_02-1.webp" alt="" />
-            </div>
-            <div class="section4CardM">
-              <img src="images/img_03.webp" alt="" />
-            </div>
-            <div class="section4CardRight">
-              <div class="section4CardRightInt">
-                <div class="section4CardRightHead">
-                  Disaster Recovery&<br />Backup of Deployment
-                </div>
-                <div class="section4CardRightPara">
-                  Connectivity performance is key to business operations. We offer
-                  a range of Broadband, Leased Line & other connectivity.
-                </div>
-                <div class="section4CardBottom">
-                  <div class="section4CardNo">03/<span>01</span></div>
-                  <div class="section4CardArrow">
-                    <i class="fa-solid fa-arrow-left"></i>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="section4aboutCont">
-          <div class="sec4Card">
-            <div class="sec4CardHead">Our Value</div>
-            <div class="sec4CardPara">
-              We’re expert. We come to work. To make things. We listen, learn
-              and work together. And we really believe dream work!
-            </div>
-          </div>
-          <div class="sec4Card">
-            <div class="sec4CardHead">Our Value</div>
-            <div class="sec4CardPara">
-              We’re expert. We come to work. To make things. We listen, learn
-              and work together. And we really believe dream work!
-            </div>
-          </div>
-          <div class="sec4Card">
-            <div class="sec4CardHead">Our Value</div>
-            <div class="sec4CardPara">
-              We’re expert. We come to work. To make things. We listen, learn
-              and work together. And we really believe dream work!
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- <div class="Sectionfeatures">
-      <div class="featuresCont">
-        <div class="featuresL">
-          <img src="images/img_03-2.webp" alt="" />
-          <div class="Image2"><img src="images/achievement.png" alt="" /></div>
-        </div>
-        <div class="featuresR">
-          <div class="featuresRTopHead">
-            <img src="images/sh_icon2.png" alt="" />Why choose Lambda Tech?
-          </div>
-          <div class="featuresRHead">
-            We want to <span>work</span> the best!
-          </div>
-          <div class="featuresRPara">
-            Collaborate Consulting exists to find the place where to being
-            seemingly disparate interests meet.
-          </div>
-          <div class="featuresRList">
-            <ul>
-              <li>Best Service provider</li>
-              <li>Fully editable & easy to use</li>
-              <li>Designed by talented team</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div> -->
+  
     <?php include './inc/fotter.php';?>
