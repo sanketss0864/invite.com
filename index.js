@@ -71,7 +71,7 @@ $(document).ready(function(){
 //   });
 // });
 
- $(".services").click(function(){
+ $("#services").click(function(){
   $(".services_grid").toggle();
 });
 $(".mobileMenu,.closeIcon").click(function(){
@@ -89,5 +89,5 @@ $(".accordionHeading").click(function(){
   $(this).next().toggle();
   $(this).children(".fa-solid").toggleClass("fa-plus");  
   $(this).children(".fa-solid").toggleClass("fa-minus");
-  
+
 });

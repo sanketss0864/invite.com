@@ -484,8 +484,12 @@
               </div>
             </div>
           </div>
- 
-        </div>
+          <!-- <div class="sectionProfileCont">
+            <div class="sectionProfileCard">
+              <img src="images/tm_04.webp" alt="" />
+            </div>
+          </div> -->
+         </div>
       </div>
     </div>
     <div class="section6">
