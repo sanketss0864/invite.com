@@ -54,20 +54,7 @@ a:hover {
 }
 
 .ping {
-  -webkit-animation: ping 0.8s ease-in-out infinite both;
   animation: ping 0.8s ease-in-out infinite both;
-}
-
-@-webkit-keyframes move {
-  0% {
-    transform: rotate(90deg) translate(4px, 0px);
-  }
-  50% {
-    transform: rotate(90deg) translate(-4px, 0px);
-  }
-  100% {
-    transform: rotate(90deg) translate(4px, 0px);
-  }
 }
 
 @keyframes move {
@@ -79,23 +66,6 @@ a:hover {
   }
   100% {
     transform: rotate(90deg) translate(4px, 0px);
-  }
-}
-@-webkit-keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(90deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  75% {
-    transform: rotate(270deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 @keyframes rotate {
@@ -113,20 +83,6 @@ a:hover {
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes ping {
-  0% {
-    transform: scale(0.2);
-    opacity: 0.8;
-  }
-  80% {
-    transform: scale(1.2);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(2.2);
-    opacity: 0;
   }
 }
 @keyframes ping {
@@ -155,7 +111,6 @@ a:hover {
 .primaryButton {
   color: #fff;
   padding: 12px 30px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   min-width: 220px;
@@ -352,14 +307,12 @@ a:hover {
 .section1 .section1Cont .section1M .section1Card {
   display: flex;
   background-color: #212738;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 0px 20px 0px 0px;
   margin: 60px 0px;
 }
 .section1 .section1Cont .section1M .section1Card .section1CL {
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   overflow: clip;
@@ -382,8 +335,7 @@ a:hover {
   left: -26px;
   bottom: -17px;
   border-radius: 50%;
-  -webkit-animation: ping 1s ease-in-out infinite both;
-          animation: ping 1s ease-in-out infinite both;
+  animation: ping 1s ease-in-out infinite both;
   background-color: white;
 }
 .section1 .section1Cont .section1M .section1Card .section1CR {
@@ -400,8 +352,7 @@ a:hover {
 }
 .section1 .section1Cont .section1M .subButton {
   color: white;
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   text-orientation: mixed;
   transform: rotate(180deg);
   padding: 10px;
@@ -412,8 +363,7 @@ a:hover {
 .section1 .section1Cont .section1M .subButton i {
   transform: rotate(90deg);
   padding: 5px;
-  -webkit-animation: move 2s linear infinite;
-          animation: move 2s linear infinite;
+  animation: move 2s linear infinite;
 }
 .section1 .section1Cont .section1R img {
   width: 95%;
@@ -423,8 +373,7 @@ a:hover {
   margin: 169px 0px;
 }
 .section1 .section1Cont .socials .social {
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   text-orientation: mixed;
   transform: rotate(180deg);
   padding: 20px;
@@ -501,7 +450,6 @@ a:hover {
 }
 .section2 .section2Cont .section2R .section2RCard {
   background-color: #00071a;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 10px;
@@ -523,19 +471,16 @@ a:hover {
   border-radius: 100px;
   padding: 49px 0px;
   height: -moz-fit-content;
-  height: -webkit-fit-content;
   height: fit-content;
 }
 .section2 .section2Cont .section2R .section2RCard .section2CardCont .cardInterior .crystalImg img {
   position: absolute;
   top: -113px;
-  -webkit-animation: rotate 14s 2s linear infinite;
-          animation: rotate 14s 2s linear infinite;
+  animation: rotate 14s 2s linear infinite;
 }
 .section2 .section2Cont .section2R .section2RCard .section2CardCont .cardInterior .section2CardHead {
   font-size: 55px;
   font-weight: 700;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
@@ -550,7 +495,6 @@ a:hover {
   font-size: 17px;
   bottom: -165px;
   left: 131px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 50%;
@@ -1027,7 +971,6 @@ a:hover {
   color: beige;
 }
 .section5 .section5Cont .section5R .owl-nav button {
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -1052,7 +995,6 @@ a:hover {
   position: relative;
 }
 .section5 .section5Cont .section5R .sectionRCardCont .section5RCard .sec5RCardProfile {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0px 0px 0px 40px;
@@ -1196,7 +1138,6 @@ a:hover {
 }
 .footer .footerContainer .footerM .footerMMAil form {
   background-color: #361f61;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   width: 100%;
@@ -1213,10 +1154,6 @@ a:hover {
   outline: none !important;
 }
 .footer .footerContainer .footerM .footerMMAil form input::-moz-placeholder {
-  color: white;
-  padding: 0px 10px;
-}
-.footer .footerContainer .footerM .footerMMAil form input:-ms-input-placeholder {
   color: white;
   padding: 0px 10px;
 }
@@ -1304,7 +1241,6 @@ a:hover {
   color: black;
 }
 .sideMenu .closeButton {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   display: flex;
@@ -1429,7 +1365,6 @@ a:hover {
   width: 80%;
   background: white;
   height: -moz-fit-content;
-  height: -webkit-fit-content;
   height: fit-content;
   margin: 50px 30px;
   padding: 40px;
@@ -1453,7 +1388,6 @@ a:hover {
   height: 0;
 }
 .ceoTalk .ceoTalkContent .ceoTalkCard .svg .svg1 {
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   position: absolute;
@@ -1498,7 +1432,6 @@ a:hover {
   right: -25px;
 }
 .aboutUs .aboutUsCont .aboutUSR {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
@@ -1579,7 +1512,6 @@ a:hover {
   padding: 18px 14px;
   font-weight: 500;
   border-radius: 31px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -1828,7 +1760,6 @@ a:hover {
 .sec1 .sec1Cont .primaryButton {
   padding: 18px 32px;
   width: -moz-fit-content;
-  width: -webkit-fit-content;
   width: fit-content;
   text-align: center;
   border-radius: 15px;
@@ -1897,8 +1828,8 @@ a:hover {
   margin: 4px 0px;
 }
 .sec1 .sec1Brands .sec1BrandSucces .sec1BrandCards .sec1BrandCard .playstoreLink a img {
-  width: 47%;
-  margin: 10px 7px;
+  height: 45px;
+  margin: 8px 7px;
 }
 .sec1 .sec1Brands .sec1BrandSucces .sec1BrandCards .sec1BrandCard .sec1BrandCardPara {
   display: -webkit-box;
@@ -1933,7 +1864,6 @@ a:hover {
 }
 .sec3 .sec3Cont .sec3Cards .sec3Card .sec3CardImg {
   border-radius: 16px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 8px 0px;
@@ -2013,7 +1943,6 @@ a:hover {
 .sec6 .sec6Cont .sec6Card .sec6L .sec6Icons .sec6Icon {
   padding: 0px;
   border: rgba(44, 44, 44, 0.3529411765) 1px solid;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 5px;
@@ -2034,7 +1963,6 @@ a:hover {
 .sec6 .sec6Cont .sec6Card .sec6R .sec6Icons .sec6Icon {
   padding: 0px;
   border: rgba(44, 44, 44, 0.3529411765) 1px solid;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 5px;
@@ -2068,7 +1996,6 @@ a:hover {
   margin: 50px 0px;
 }
 .sec9 .sec9Cont .sec9Cards .sec9Card {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 30px 0px;
@@ -2169,7 +2096,6 @@ a:hover {
   color: white;
   background-color: #2149f3;
   padding: 10px 20px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 8px;
@@ -2199,7 +2125,6 @@ a:hover {
   line-height: 59px;
 }
 .testimonial .testimonial-cont .testimonialL .testimonial-button {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-weight: 700;
@@ -2306,7 +2231,6 @@ a:hover {
     padding: 18px 15px;
     font-weight: 500;
     font-size: 16px;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
@@ -2649,7 +2573,6 @@ a:hover {
 }
 @media (max-width: 427px) {
   .navbar .navbarCont .navbarLinks .navbarLogo {
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
@@ -2927,7 +2850,6 @@ a:hover {
     height: auto;
   }
   .ceoTalk .ceoTalkContent .ceoTalkCard .svg .svg2 {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     position: absolute;

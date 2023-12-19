@@ -21,7 +21,7 @@
               </div>
               <div class="sec1BrandCardHead headingS">Fresh K Chicken</div>
               <div class="playstoreLink">
-                <a href="https://play.google.com/store/apps/details?id=com.customer.freshkchicken&amp;pli=1"><img src="images/google-play.png" alt=""></a>
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.customer.freshkchicken&amp;pli=1"><img src="images/google-play.png" alt=""></a>
               </div>
               <div class="sec1BrandCardPara paraS">
                 Build a online market for fresh meat uers for FreshKChicken:
@@ -40,7 +40,7 @@
                 VIPINDIA.com Search Dial
               </div>
               <div class="playstoreLink">
-                <a href="https://play.google.com/store/apps/details?id=com.Vip.vipindia"><img src="images/google-play.png" alt=""></a>
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.Vip.vipindia"><img src="images/google-play.png" alt=""></a>
               </div>
               <div class="sec1BrandCardPara paraS">
                 Build a Local Search Engine to Update VIP india group:"Update
@@ -56,7 +56,7 @@
                 Music Equalizer &amp; Bass Booster
               </div>
               <div class="playstoreLink">
-                <a href="https://play.google.com/store/apps/details?id=com.equalizer.android"><img src="images/google-play.png" alt=""></a>
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.equalizer.android"><img src="images/google-play.png" alt=""></a>
               </div>
               <div class="sec1BrandCardPara paraS">
                 Improve your device's audio using Equalizer, Bass Boost, and 3D
@@ -74,7 +74,7 @@
               </div>
               <div class="sec1BrandCardHead headingS">Manish Kumar Classes</div>
               <div class="playstoreLink">
-                <a href="https://play.google.com/store/apps/details?id=com.exam.app.manishclass"><img src="images/google-play.png" alt=""></a>
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.exam.app.manishclass"><img src="images/google-play.png" alt=""></a>
               </div>
               <div class="sec1BrandCardPara paraS">
                 Build a online sotre for Exams Preparation in India for Primus
@@ -92,7 +92,7 @@
                 VIPINDIA.com Search Dial
               </div>
               <div class="playstoreLink">
-                <a href="https://play.google.com/store/apps/details?id=com.deliveryboy.delivery"><img src="images/google-play.png" alt=""></a>
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.deliveryboy.delivery"><img src="images/google-play.png" alt=""></a>
               </div>
               <div class="sec1BrandCardPara paraS">
                 Build a online market for deliver partner to deliver fresh meat
@@ -113,7 +113,7 @@
                 MaxisMart - Online Grocery App
               </div>
               <div class="playstoreLink">
-                <a href="https://play.google.com/store/apps/details?id=com.maxismart.ecommercesolution"><img src="images/google-play.png" alt=""></a>
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.maxismart.ecommercesolution"><img src="images/google-play.png" alt=""></a>
               </div>
               <div class="sec1BrandCardPara paraS">
                 build a online grocery by platform for users which deliverd
