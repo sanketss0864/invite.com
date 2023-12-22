@@ -130,7 +130,7 @@
 
 <div class="section6">
   <div class="section6Cont">
-    <div class="section6Text">
+    <div class="section6Text hidden">
       Looking for the Best IT Business Solutions?
     </div>
     <div class="primaryButton">Get a quote</div>
